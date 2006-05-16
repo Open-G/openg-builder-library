@@ -1,0 +1,78 @@
+*** 14:26:34.9 : Build started [08.04.2006]  File: Test Build 006.ogbld
+
+
+>>> 14:26:34.9 : Calling Pre-build VI started
+
+Pre-build VI Path: C:\Shared Projects\OpenG\deab\example_projects\Test 001\Pre-Post Build VI Example.vi
+
+>>> 14:26:37.0 : Load Call-Back VI(s) started
+
+>>> 14:26:37.3 : DEAB Expand & Verify TL&D VI Paths started
+
+>>> 14:26:37.3 : Load VIs into Memory started
+
+6 VIs have been loaded
+
+>>> 14:26:37.8 : Test VIs need be Unloaded started
+
+>>> 14:26:37.8 : Test for VI Unsaved Changes started
+
+>>> 14:26:37.9 : Generate Resources Copy Info started
+
+>>> 14:26:38.0 : Generate VI Building Info started
+
+>>> 14:26:38.2 : Revise Ambiguous VIs Destination started
+
+>>> 14:26:38.3 : Verify if Sources can be Removed started
+
+>>> 14:26:38.4 : Create Target Dirs and LLBs started
+
+>>> 14:26:38.5 : Set VI Properties started
+
+>>> 14:26:42.6 : Set Custom VI Properties started
+
+>>> 14:26:42.9 : Save VIs to Destination started
+
+6 VIs have been saved
+
+>>> 14:26:43.6 : UnLoad Top-Level and Dynamic VIs started
+
+>>> 14:26:44.0 : Copy Resource Files and Relink VIs started
+
+6 Resource files have been copied
+
+>>> 14:26:44.7 : Set Top Level VIs in LLBs started
+
+>>> 14:26:44.8 : Convert LLBs to EXEs started
+
+>>> 14:26:44.9 : Copy Support Files started
+
+10 Support files have been copied
+
+>>> 14:26:45.2 : Calling Post-build VI started
+
+Post-build VI Path: C:\Shared Projects\OpenG\deab\example_projects\Test 001\Pre-Post Build VI Example.vi
+
+
+*** 14:26:47.9 : Build finished
+
+
+#########################
+Ambiguous VIs information
+#########################
+
+None
+
+
+#########################
+VIs not included to build
+#########################
+
+None
+
+
+#############################
+Non-VIs not included to build
+#############################
+
+None

@@ -1,0 +1,88 @@
+[General]
+File Format Version=1.0.0
+Project Root=""
+Source Root=""
+Build Root=Target
+Namespace=test-01
+Overwrite Existing Files=TRUE
+Log Dir=""
+Log File=deab_build.log
+Log File Suffix=""
+Include Help Files=TRUE
+Help File Dir="Help Files"
+Include Shared Libs=TRUE
+Shared Lib Dir="Bin Resources"
+Include External Subrs=TRUE
+External Subr Dir="Bin Resources"
+Include Hidden VIs=TRUE
+EXE Icon File=""
+New Build Root=TRUE
+Unsaved Changes MsgBox=TRUE
+Ambiguous VIs Dest Dir="ambiguous vis.llb"
+Call Pre-Build VI="Pre-Post Build VI Example.vi"
+Call Post-Build VI="Pre-Post Build VI Example.vi"
+Revision File=build_revision.txt
+Version VI Name="Test VI 002.vi"
+Version Ctrl Name="Version Info"
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=TRUE
+Call-Back VI 1="Call-Back VI Example.vi"
+
+[Top Level VIs]
+VI 1="Test 002.llb/Test VI 002.vi"
+
+[Dynamic VIs]
+DynVI 1="Test VI 001.vi"
+
+[Exclude Lib Dirs from Build]
+
+[Destination 1]
+Source Dir=""
+Target Dir=test_built.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Remove Diagrams=FALSE
+Default Destination=FALSE
+Apply New Password=ogb
+Namespace=""
+
+[Destination 2]
+Source Dir=<vi.lib>
+Target Dir=test-ni.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Remove Diagrams=FALSE
+Default Destination=FALSE
+Apply New Password=ni
+Namespace=""
+
+[Destination 3]
+Source Dir=<user.lib>/_OpenG.lib
+Target Dir=test-openg.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Remove Diagrams=FALSE
+Default Destination=FALSE
+Apply New Password=ogtk
+Namespace=""
+
+[SupportFiles 1]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+SourceFile 1=*.ini
+SourceFile 2=readme.txt
+
+[SupportFiles 2]
+TargetDir=Docs
+OverwriteExisting=FALSE
+FollowVIDirHierarchy=FALSE
+SourceFile 1=*.txt
+
+[VI Property - Test VI 002.vi]
+Front Panel Window:Title		= "Test VI built by OGB"
+Front Panel Window:Window Bounds	= 10;20;400;300
+Front Panel Window:Show Scroll Bars	= False
+VI Description				= "This Test VI was built by OpenG Builder"
+Execution:Is Reentrant			= True

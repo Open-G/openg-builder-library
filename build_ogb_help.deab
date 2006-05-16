@@ -1,0 +1,83 @@
+[General]
+File Format Version=1.0.0
+Namespace=ogb
+Project Root=""
+Source Root="user docs"
+Build Root=built/help
+Ambiguous VIs Dest Dir=""
+Revision File=build_ogb_revisions.txt
+Log Dir=built
+Log File=""
+Log File Suffix=""
+#Log File Suffix=" %y_%m_%d %X"
+
+New Build Root=TRUE
+Include Hidden VIs=FALSE
+Overwrite Existing Files=TRUE
+Unsaved Changes MsgBox=TRUE
+
+Include Help Files=FALSE
+Include Shared Libs=FALSE
+Include External Subrs=FALSE
+
+Help File Dir=../rsc
+Shared Lib Dir=../rsc
+External Subr Dir=../rsc
+
+EXE Icon File=""
+
+Call Pre-Build VI=""
+Call Post-Build VI="build support/OGB Help - Post Build VI.vi"
+
+# This does not work when DEAB source is used to build a DEAB target=""
+# A version is taken in a Post-Build VI and saved to DEAB Curren Version.vi in DEAB Builder.vi=""
+# Version VI Name="DEAB Current Version.vi"
+# Version Ctrl Name="Version Info"
+
+
+
+##########################=""
+Version VI Name=""
+Version Ctrl Name=""
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=FALSE
+[Top Level VIs]
+##########################=""
+VI 1="help_launcher.llb/OpenG Builder Documentation.vi"
+
+[Dynamic VIs]
+##########################=""
+
+[Exclude Lib Dirs from Build]
+##########################=""
+
+[Destination 1]
+Source Dir=""
+Target Dir=help_launcher.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Remove Diagrams=FALSE
+Default Destination=FALSE
+Apply New Password=""
+Namespace=""
+
+[SupportFiles 1]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+SourceFile 1=*.htm
+SourceFile 2=*.html
+
+[SupportFiles 2]
+TargetDir=css
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+SourceFile 1=css/*
+
+[SupportFiles 3]
+TargetDir=images
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+SourceFile 1=images/*
+

@@ -1,0 +1,3 @@
+28-10-04	
+Featurecheck; can deab do the things we need now ??
+GUI design; next step is designing and implementing a GUI for deab

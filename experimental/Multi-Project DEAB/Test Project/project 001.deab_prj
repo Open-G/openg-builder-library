@@ -1,0 +1,63 @@
+[General]
+Project Root=""
+Log Dir=""
+Log File=""
+Log File Suffix=""
+#Log File Suffix=" %Y_%m_%d %H-%M-%S"
+Update TS If Error=False
+
+[DEAB Files]
+Build-0=0.deab
+Build-1=1.deab
+Build-2=2.deab
+Build-3=3.deab
+Build-4=4.deab
+Build-5=5.deab
+Build-6=6.deab
+Build-7=7.deab
+Build-8=8.deab
+
+[Build-0]
+Depends On DEAB 001=Build-4
+Depends On DEAB 002=Build-7
+Depends On File 001=*.txt
+Depends On File 002=..\Support\*.vi
+Depends On File 003=..\Support\Typedefs\*.ctl
+
+[Build-1]
+Depends On DEAB 001=Build-2
+Depends On DEAB 002=Build-3
+Depends On DEAB 003=Build-4
+Depends On File 001=*.txt
+Depends On File 002=..\*.vi
+
+[Build-2]
+Depends On DEAB 001=Build-5
+
+[Build-3]
+Depends On DEAB 001=Build-8
+
+[Build-4]
+Depends On DEAB 001=Build-6
+
+[Build-5]
+Depends On DEAB 001=Build-7
+Depends On DEAB 002=Build-8
+
+[Build-6]
+
+[Build-7]
+
+[Build-8]
+Depends On DEAB 002=Build-4
+
+[DEAB Timestamps]
+Build-6=3183454883.703
+Build-7=3183454883.734
+Build-4=3183454883.765
+Build-0=3183454883.796
+Build-8=3183454883.828
+Build-5=3183454883.859
+Build-3=3183454883.890
+Build-2=3183454883.921
+Build-1=3183454883.937

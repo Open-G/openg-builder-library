@@ -1,0 +1,144 @@
+
+[General]
+
+Project Root		= ""
+Build Root		= "built/installer"
+Source Root		= "source"
+
+Namespace		= "ogc"
+
+Log File 		= ""
+New Build Root		= TRUE
+Overwrite Existing Files= TRUE
+Include Hidden VIs	= TRUE
+
+TheLeastNumberedDestinationIsDefault = TRUE
+
+Include Help Files	= True
+Include Shared Libs	= True
+Include External Subrs	= True
+Help File Dir		= "data/help"
+Shared Lib Dir		= "data/rsc"
+External Subr Dir	= "data/rsc"
+
+EXE Icon File		= ""
+
+
+###########################
+# Exclude Lib Dirs
+###########################
+
+[Exclude Lib Dirs from Build]
+VILIB			= "<application>/vi.lib"
+LVHELP			= "<application>/help"
+
+
+###########################
+# Top-level and Dynamic VIs
+###########################
+
+[Top Level VIs]
+
+VI_Tree			= "VI Tree - All Components.vi"
+
+[Dynamic VIs]
+
+
+###########################
+# Destinations
+###########################
+
+[Destination 0]
+# It's default destination. Keep its number the least among other destination numbers
+Source Dir		= "c:\"
+Target Dir		= "data/misc"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 1]
+Source Dir		= "OGC"
+Target Dir		= "data/OGC"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 2]
+Source Dir		= "OGPM"
+Target Dir		= "data/OGPM"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 3]
+Source Dir		= "OGC_Installer"
+Target Dir		= "data/OGC_Installer"
+
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 4]
+Source Dir		= "platform"
+Target Dir		= "data/platform"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 5]
+Source Dir		= "rsc"
+Target Dir		= "data/rsc"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+[Destination 6]
+Source Dir		= "<user.lib>/_OpenG.lib/"
+Target Dir		= "data/OpenG_VIs"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+
+
+###########################
+# Support Files
+###########################
+
+[SupportFiles 0001]
+TargetDir		= ""
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "installer launch/*.*"
+
+[SupportFiles 2001]
+TargetDir		= "data/rsc"
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "rsc/*.ico"
+SourceFile 002		= "rsc/ogpm_shell.vbs"
+
+[SupportFiles 3001]
+TargetDir		= "data/doc"
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "doc/*.txt"
+SourceFile 002		= "doc/*.htm"
+
+[SupportFiles 5001]
+TargetDir		= "data/db"
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "db/*.*"
+
+[SupportFiles 5002]
+TargetDir		= "data/db/cache"
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "db/cache/*.*"
+
+[SupportFiles 5003]
+TargetDir		= "data/db/installed"
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+SourceFile 001		= "db/installed/*.*"
+

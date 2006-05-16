@@ -1,0 +1,179 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MPDEAB Project File Description</title>
+</head>
+
+<body style="font-family: Verdana; font-size: 10pt">
+
+<p>MPDEAB Project File Format<br>
+DEAB Version&nbsp; 1.0.0<br>
+$Revision: 1.1 $<br>
+$Date: 2004/11/17 06:36:55 $</p>
+<p>This document describes parameters of a MPDEAB Project File.</p>
+
+<p><b>[General]</b><br>
+<a href="#General: Project Root">Project Root</a><br>
+<a href="#General: Log Dir">Log Dir</a><br>
+<a href="#General: Log File">Log File</a><br>
+<a href="#General: Log File Suffix">Log File Suffix<br>
+</a><a href="#General: Update TS If Error">Update TS If Error</a></p>
+
+
+<p><b><a href="#DEAB Files">[DEAB Files]</a></b><br>
+DEAB_File_Tag</p>
+
+
+<p><b><a href="#DEAB_File_Tag">[DEAB_File_Tag]</a></b><br>
+Depends On DEAB N<br>
+Depends On File N</p>
+
+
+<p><b><a href="#DEAB Timestamps">[DEAB Timestamps]</a></b><br>
+DEAB_File_Tag</p>
+
+
+<p>&nbsp;</p>
+
+
+<hr>
+<p><b><a name="General: Project Root"></a>[General]</b></p>
+<p><b>Project Root</b>	= &quot;dir path&quot;</p>
+<p><i>Project Root</i> is optional.  If it is not specified, it is assumed to be the
+current MPDEAB file's parent directory.</p>
+<p><u>Examples:</u></p>
+<p>Project Root = &quot;&quot;<br>
+Project Root = &quot;C:\My Project&quot;<br>
+</p>
+<hr>
+<p><b><a name="General: Log Dir"></a>[General]</b></p>
+<p><b>Log Dir</b>			= &quot;dir path&quot;</p>
+<p><i>Log Dir</i> is an optional parameter that specifies a directory where a log file is written. If it is not specified, it is assumed to be the
+MPDEAB file's parent directory.
+<i> Log Dir</i> may be either an absolute path or a path relative to the MPDEAB file's parent directory.<br>
+</p>
+<hr>
+<p><b><a name="General: Log File"></a>[General]</b></p>
+<p><b>Log File</b>		= "file path/name&quot;</p>
+<p><i>Log File</i> is an optional parameter that specifies a log file. If it is not specified, it is assumed to be a file with name of the
+MPDEAB file and '.log' extension, located in
+<i><a href="#General: Log Dir">Log Dir</a></i> directory. <i> Log File</i> may be either an absolute path or a path relative to
+<i> Log Dir</i> directory. If it's an absolute path, it overrides <i> Log Dir</i>.&nbsp;
+</p>
+<p>Note that an actual name of a log file can contain a suffix if the <i><a href="#General: Log File Suffix">Log
+File Suffix</a></i> parameter specifies any.<br>
+</p>
+<hr>
+<p><b><a name="General: Log File Suffix"></a>[General]</b></p>
+<p><b>Log File Suffix</b>		= &quot;string&quot;<br>
+<br>
+<i>Log File Suffix</i> is an optional parameter that specifies a suffix be appended to a name of log file. A suffix will be passes through
+a "Format Date/Time String" primitive to format actual suffix; herewith, all characters that are invalid for target file system (e.g. ':' in Windows) will be replaced with a valid character; also, '.' is replaced with '_'. By default, no suffix appended to
+a log file name.</p>
+<p><u>Example:</u></p>
+<p>Log File Suffix = " %c"</p>
+<p># It appends date/time when a build started to name of a log file.<br>
+</p>
+<hr>
+<p><b><a name="General: Update TS If Error"></a>[General]</b></p>
+<p><b>Update TS If Error</b> = True/False<br>
+<br>
+<i>Update TS If Error</i> is an optional parameter. Typically, MPDEAB updates a
+deab's time stamp only if no error occurred while processing the deab file. If
+this parameter is TRUE, a deab's time stamp is updated independently of an error
+status. By default, <i>Update TS If Error</i> is FALSE.<br>
+</p>
+<hr>
+<p><b><a name="DEAB Files"></a>[DEAB Files]</b></p>
+<p><b>DEAB_File_Tag</b> = &quot;deab file path&quot;</p>
+<p><i>[DEAB Files]</i> section specifies .deab files that are under MPDEAB
+control. It can contain arbitrary number of keys. A key specifies a tag used to
+refer to a .deab file (the key name) and a path to the .deab file (the key
+value).</p>
+<p>You can use any unique <i>DEAB_File_Tag</i>.
+A <i>deab file path</i> may be either an absolute path, or a path relative to <i><a href="#General: Project Root">Project
+Root</a></i>.</p>
+<p><u>Example:</u></p>
+<p>[DEAB Files]<br>
+Build-1 = 1.deab<br>
+Build-2 = 2.deab<br>
+Build-3 = 3.deab
+<br>
+</p>
+<hr>
+<p><b><a name="DEAB_File_Tag"></a>[DEAB_File_Tag]</b></p>
+<p><b>Depends On DEAB N</b> = &quot;DEAB_File_Tag&quot;<br>
+<b>Depends On File N</b> = &quot;path&quot;</p>
+<p><i>[DEAB_File_Tag] </i>sections describe dependencies of deab files specified
+in the <i><a href="#DEAB Files">[DEAB Files]</a></i> section. A name of <i>[DEAB_File_Tag]</i> 
+section is to be the same as the respective <i>DEAB_File_Tag</i> key name in the
+<i>[DEAB Files]</i> section. If a <i>[DEAB_File_Tag]</i> section is missed for
+any <i>DEAB_File_Tag</i>, it is assumed that the deab file depends on nothing.</p>
+<p><i>Depends On DEAB N</i> keys should be named &quot;Depends On DEAB N&quot;, where
+&quot;N&quot; is an
+arbitrary unique integer. It allows to specify multiple deab file tags on which
+the <i>[DEAB_File_Tag]</i> depends. There are two conditions MPDEAB verifies:</p>
+<ul>
+  <li>
+    <p style="margin-top: 4">A value of <i>Depends On DEAB</i> key is to be a <i>DEAB_File_Tag</i>
+    specified in the <i><a href="#DEAB Files">[DEAB Files]</a></i> section;
+    otherwise, MPDEAB returns an error.</li>
+  <li>
+    <p style="margin-top: 4">It is not allowed to any DEAB_File_Tags be mutual
+    dependent, neither directly nor indirectly (via their dependency tree).
+    MPDEAB returns an error if it meets a &quot;mutual dependency&quot;
+    condition.</li>
+</ul>
+<p><i>Depends On File N</i> keys should be named &quot;Depends On File N&quot;, where
+&quot;N&quot; is an
+arbitrary unique integer.
+It allows to specify multiple dependency files for the <i>[DEAB_File_Tag]</i>. A
+value of <i>Depends On File</i> can be either an absolute path or a path relative to
+a parent directory path of the <i>[DEAB_File_Tag]</i> file specified in the <i><a href="#DEAB Files">[DEAB
+Files]</a></i> section. A value may contain wildcards in a file name to specify a group of files.<br>
+</p>
+<p><u>Example:</u></p>
+<p>[DEAB Files]<br>
+Build-1 = 1.deab<br>
+Build-2 = 2.deab<br>
+Build-3 = 3.deab
+</p>
+<p>[Build-1]<br>
+Depends On DEAB 001 = Build-2<br>
+Depends On DEAB 002 = Build-3
+</p>
+<p>[Build-2]<br>
+Depends On DEAB 001 = Build-3<br>
+Depends On File 001 = &quot;source\build-2\*.vi&quot;<br>
+Depends On File 002 = &quot;source\build-2\*.ctl&quot;
+</p>
+<p>[Build-3]<br>
+Depends On File 001 = &quot;source\*.vi&quot;<br>
+Depends On File 002 = &quot;source\*.ctl&quot;<br>
+Depends On File 003 = &quot;source\*.llb&quot;
+</p>
+<p>&nbsp;
+</p>
+<hr>
+<p><b><a name="DEAB Timestamps"></a>[DEAB Timestamps]</b></p>
+<p><b>DEAB_File_Tag</b> = numeric_time_stamp</p>
+<p><i>[DEAB Timestamps]</i>  section is under MPDEAB control; typically, it
+should not be manually changed.</p>
+<p>MPDEAB writes <i>DEAB_File_Tag</i> keys for each deab file specified in the <i><a href="#DEAB Files">[DEAB
+Files]</a></i> section it successfully builds. </p>
+<p>&nbsp;</p>
+<p>
+<br>
+</p>
+
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

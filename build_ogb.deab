@@ -1,0 +1,136 @@
+[General]
+File Format Version=1.0.1
+Namespace=ogb
+Project Root=""
+Source Root=source
+Build Root=built/rsc
+Ambiguous VIs Dest Dir=""
+
+Revision File=build_ogb_revisions.txt
+Log Dir=built
+Log File=""
+Log File Suffix=""
+#Log File Suffix=" %y_%m_%d %X"
+
+New Build Root=TRUE
+Include Hidden VIs=FALSE
+Overwrite Existing Files=TRUE
+Unsaved Changes MsgBox=TRUE
+
+Include Help Files=FALSE
+Include Shared Libs=FALSE
+Include External Subrs=FALSE
+
+Help File Dir=""
+Shared Lib Dir=""
+External Subr Dir=""
+
+EXE Icon File=""
+
+Call Pre-Build VI=""
+Call Post-Build VI="OGB_Builder.llb/Pre-Post Build VI (deab builder).vi"
+
+# This does not work when DEAB source is used to build a DEAB target=""
+# A version is taken in a Post-Build VI and saved to DEAB Curren Version.vi in DEAB Builder.vi=""
+# Version VI Name="DEAB Current Version.vi"
+# Version Ctrl Name="Version Info"
+
+
+
+##########################=""
+Version VI Name=""
+Version Ctrl Name=""
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=FALSE
+Namespace Convention=0
+[Top Level VIs]
+##########################=""
+VI 1="VI Tree - OGB.vi"
+VI 2=GUI/OpenG_Builder.vi
+
+[Dynamic VIs]
+##########################=""
+DynVI 1="Menu-Launch Stub/OpenG Builder.vi"
+DynVI 2="support/Generic Set Single Property Template.vi"
+DynVI 3="support/Generic VI Property Template.vi"
+
+[Exclude Lib Dirs from Build]
+##########################=""
+
+[Destination 1]
+Source Dir=""
+Target Dir=ogb.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=""
+
+[Destination 2]
+Source Dir=gui
+Target Dir=ogb_gui.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=""
+
+[Destination 3]
+Source Dir="Menu-Launch Stub"
+Target Dir=../project
+Convert Target to LLB=FALSE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=<none>
+
+[Destination 4]
+Source Dir=<application>
+Target Dir=ogb_NI.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=""
+
+[Destination 5]
+Source Dir=<user.lib>/_OpenG.lib
+Target Dir=ogb_OpenG.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=""
+
+[Destination 6]
+Source Dir=/a/
+Target Dir=ogb_misc.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=TRUE
+Apply New Password=""
+Namespace=""
+
+[SupportFiles 1]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1=gui/OGB_Tips.ini
+
+[SupportFiles 2]
+TargetDir="LV8 support"
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1="Support/DEAB Open LV80 Project App Reference.vi"
+

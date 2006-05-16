@@ -1,0 +1,4 @@
+This is an example project that was intended to be built using the Development Environment Application Builder version 0.7 (or later).
+
+-- Build --
+Run "Build Text File Viewer.vi".  This will build the source files located in the Source Folder into a software product located in the "Built" directory.  The build rules (paramters) are located in the "Text File Viewer.deab" file.

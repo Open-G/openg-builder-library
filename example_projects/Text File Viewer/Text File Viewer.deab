@@ -1,0 +1,25 @@
+[General]
+Namespace="TextFileViewer"
+Build Root="Built"
+Overwrite Existing Files=TRUE
+
+[Top Level VIs]
+Top Level VI 1="Source\Text File Viewer.vi"
+
+[Dynamic VIs]
+
+[Destination 1]
+Source Dir=""
+Target Dir="TextFileViewer.llb"
+Convert Target to LLB=TRUE
+Convert Target to EXE=TRUE
+Remove Diagrams=FALSE
+
+[Destination 2]
+Source Dir="<vi.lib>"
+Target Dir="TextFileViewer-vi_lib.llb"
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Remove Diagrams=FALSE
+
+[Exclude Lib Dirs from Build]

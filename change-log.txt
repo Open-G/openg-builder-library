@@ -1,0 +1,27 @@
+-= ogrsc_deab-0.9-1.ogp =-
+
+Visit 
+
+http://openg.org/deab for documentation and examples
+
+
+Changes from 0.8-1 --> 0.9-1
+--------------------------------
+2004-03-08
+[FIX] Namespace was not being read from build file
+[MOD] Illegal file names are now converted automatically
+      by .\project\llbedit.llb\Is Name Multiplatform.vi
+
+
+Changes from 0.7-1 --> 0.8-1
+--------------------------------
+2004-03-06
+[Mod] Rebuilt with appcontrol 2.2 to fix build on 6.0 and 6.1
+[Mod] Added Project Root key and better construction of paths
+2003-12-01
+[Fix] Now ignores comments in INI file
+[Fix] Only attempts to delete files (to overwrite)
+      if they exist.  This was causing errors if
+      the files didn't exist.
+[Mod] Now only deletes target files, not the entire
+      target folder

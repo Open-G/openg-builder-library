@@ -1,0 +1,139 @@
+*** 13:00:45.0 : Build started [17.12.2004]  File: Build 001.ogbld
+
+
+>>> 13:00:45.0 : DEAB Expand & Verify TL&D VI Paths started
+
+>>> 13:00:45.4 : Load VIs into Memory started
+
+>>> 13:00:47.4 : Test VIs need be Unloaded started
+
+>>> 13:00:47.5 : Test for VI Unsaved Changes started
+
+>>> 13:00:47.5 : Generate Resources Copy Info started
+
+>>> 13:00:47.8 : Generate VI Building Info started
+
+>>> 13:00:48.7 : Revise Ambiguous VIs Destination started
+
+>>> 13:00:49.2 : Verify if Sources can be Removed started
+
+>>> 13:00:49.2 : Create Target Dirs and LLBs started
+
+>>> 13:00:49.5 : Save VIs to Destination started
+
+>>> 13:01:05.3 : UnLoad Top-Level and Dynamic VIs started
+
+>>> 13:01:05.8 : Copy Resource Files and Relink VIs started
+
+>>> 13:01:08.3 : Set Top Level VIs in LLBs started
+
+>>> 13:01:08.3 : Convert LLBs to EXEs started
+
+>>> 13:01:08.8 : Copy Support Files started
+
+
+*** 13:01:09.0 : Build finished
+
+
+#########################
+Ambiguous VIs information
+#########################
+
+None
+
+
+#########################
+VIs not included to build
+#########################
+
+1  : Instance           1 16Test Express VIs .vi
+2  : Instance           2 16Test Express VIs .vi
+
+
+#############################
+Non-VIs not included to build
+#############################
+
+*** Summary ***
+
+1  : C:\Program Files\National Instruments\LabVIEW 7.1\help\glang.chm (Help file)
+2  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvanls.chm (Help file)
+3  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvexpress.chm (Help file)
+4  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvwave.chm (Help file)
+5  : C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\<Not A Path> (Help file)
+6  : C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\<Not A Path> (Help file)
+
+*** Linking details ***
+
+1  : C:\Program Files\National Instruments\LabVIEW 7.1\help\glang.chm (Help file)
+Referred in:
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Utility\error.llb\Merge Errors.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Utility\error.llb\Error Cluster From Error Code.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Utility\error.llb\Trim Whitespace.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maUtilsandCtls.llb\ma_Find First Error.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Utility\error.llb\Clear Errors.vi
+
+2  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvanls.chm (Help file)
+Referred in:
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\2dsp.llb\Power Spectrum.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\2dsp.llb\Real FFT.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\ANALYSIS\0MEASDSP.LLB\Scaled Time Domain Window.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\2dsp.llb\Unwrap Phase.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Sine Wave.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Square Wave.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Uniform White Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Gaussian White Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Periodic Random Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Gamma Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Poisson Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Binomial Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Bernoulli Noise.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Binary MLS.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Triangle Wave.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\1siggen.llb\Sawtooth Wave.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Analysis\baseanly.llb\Inverse f Filter.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\Inverse f Filter Coefficients.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\IIR Cascade Filter.vi
+
+3  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvexpress.chm (Help file)
+Referred in:
+Instrument: C:\Shared Projects\OpenG\deab\Bugs\2 - Express VIs\Test Express VIs.vi\Instance           1 24Saved   Test Express VIs .vi
+Instrument: C:\Shared Projects\OpenG\deab\Bugs\2 - Express VIs\Test Express VIs.vi\Instance           2 24Saved   Test Express VIs .vi
+
+4  : C:\Program Files\National Instruments\LabVIEW 7.1\help\lvwave.chm (Help file)
+Referred in:
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Measure\maspectr.llb\FFT Spectrum (Mag-Phase).vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Spectrum (Mag-Phase) for 1 Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\macond.llb\Scaled Window.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\macond.llb\Scaled Window for 1 Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\macond.llb\Scaled Window for N Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Spectrum (Mag-Phase) for N Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Measure\maspectr.llb\FFT Power Spectrum.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Power Spectrum for 1 Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Power Spectrum for N Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Measure\maspectr.llb\FFT Power Spectral Density.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Power Spectral Density for 1 Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\maspectr.llb\FFT Power Spectral Density for N Chan.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\masignal.llb\Sine Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\Measure\masignal.llb\Square Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Uniform White Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Gaussian White Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Periodic Random Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Gamma Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Poisson Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Binomial Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Bernoulli Noise Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\MLS Sequence Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\masignal.llb\Triangle Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\masignal.llb\Sawtooth Waveform.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\Inverse f Noise Waveform.vi
+
+5  : C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\<Not A Path> (Help file)
+Referred in:
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\Inverse f Designer.vi
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\analysis\baseanly.llb\Inverse f Settings Check.vi
+
+6  : C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\<Not A Path> (Help file)
+Referred in:
+Instrument: C:\Program Files\National Instruments\LabVIEW 7.1\vi.lib\measure\manoise.llb\ma_Inverse f Settings Check.vi
+

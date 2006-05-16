@@ -1,0 +1,75 @@
+# DEAB Script to build DEAB Dynamic API
+# 15:35 09.12.2004
+
+[General]
+
+File Format Version	= 1.0.0
+
+Namespace		= "ogb_api"
+
+Project Root		= ""
+Source Root		= "source"
+Build Root		= "built/api"
+Ambiguous VIs Dest Dir	= ""
+
+Revision File		= "build_ogb_revisions.txt"
+Log Dir			= "built"
+Log File		= ""
+Log File Suffix		= ""
+#Log File Suffix		= " %y_%m_%d %X"
+
+New Build Root		= TRUE
+Include Hidden VIs	= FALSE
+Overwrite Existing Files= TRUE
+Unsaved Changes MsgBox	= TRUE
+
+Include Help Files	= False
+Include Shared Libs	= False
+Include External Subrs	= False
+Help File Dir		= ""
+Shared Lib Dir		= ""
+External Subr Dir	= ""
+
+EXE Icon File		= ""
+
+Call Pre-Build VI	= ""
+Call Post-Build VI	= "OGB_Builder.llb/Pre-Post Build VI (deab builder).vi"
+
+
+
+##########################
+[Top Level VIs]
+
+1 = "VI Tree - OGB_API.vi"
+
+##########################
+[Dynamic VIs]
+
+
+##########################
+[Exclude Lib Dirs from Build]
+
+
+##########################
+
+
+[Destination 1]
+Source Dir		= ""
+Target Dir		= "ogb_api.llb"
+Convert Target to LLB	= TRUE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+Default Destination	= TRUE
+
+
+
+###########################################################
+# SupportFiles 
+
+[SupportFiles 1]
+TargetDir		= ""
+OverwriteExisting	= True
+FollowVIDirHierarchy	= False
+#SourceFile 001		= "../developer docs/*.htm"
+SourceFile 002		= "Dynamic API/dir.mnu"
+

@@ -1,0 +1,1 @@
+THe Builder GUI does not allow folder names with .llb extensions.  This is an unnecessary restriction.  In fact the OpenG Toolkit builds folders with .llb extensions so that Mac users can convert them to LLBs and use long file names.

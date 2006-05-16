@@ -1,0 +1,77 @@
+# OGB Script to build OpenG MSI Installer Builder
+# 19:48 08.02.2005
+
+[General]
+
+File Format Version	= 1.0.0
+
+Namespace		= "ogmsiib"
+
+Project Root		= ""
+Source Root		= "source"
+Build Root		= "built/rsc_ogmsiib"
+Ambiguous VIs Dest Dir	= ""
+
+Revision File		= "build_ogb_revisions.txt"
+Log Dir			= "built"
+Log File		= ""
+Log File Suffix		= ""
+#Log File Suffix		= " %y_%m_%d %X"
+
+New Build Root		= TRUE
+Include Hidden VIs	= FALSE
+Overwrite Existing Files= TRUE
+Unsaved Changes MsgBox	= TRUE
+
+Include Help Files	= False
+Include Shared Libs	= False
+Include External Subrs	= False
+
+Help File Dir		= ""
+Shared Lib Dir		= ""
+External Subr Dir	= ""
+
+EXE Icon File		= ""
+
+Call Pre-Build VI	= ""
+Call Post-Build VI	= "OGB_Builder.llb/Pre-Post Build VI (deab builder).vi"
+
+Version VI Name		= "OGIB - Current Version.vi"
+Version Ctrl Name	= "Version Info"
+
+
+
+##########################
+[Top Level VIs]
+
+1 = "MSI Installer Builder/OG MSI Installer Builder.vi"
+
+##########################
+[Dynamic VIs]
+1 = "Menu-Launch Stub/OpenG MSI Installer Builder.vi"
+2 = "MSI Installer Builder/OGIB - Installer Creation Progress.vi"
+
+
+##########################
+[Exclude Lib Dirs from Build]
+
+
+##########################
+
+
+[Destination 1]
+Source Dir		= ""
+Target Dir		= "ogmsiib.llb"
+Convert Target to LLB	= TRUE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+Default Destination	= TRUE
+
+[Destination 2]
+Source Dir		= "Menu-Launch Stub"
+Target Dir		= "../project"
+Convert Target to LLB	= FALSE
+Convert Target to EXE	= FALSE
+Remove Diagrams		= FALSE
+Default Destination	= FALSE
+Namespace		= "<none>"

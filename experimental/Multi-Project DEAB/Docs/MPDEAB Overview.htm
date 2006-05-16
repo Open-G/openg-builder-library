@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>MPDEAB Overview</title>
+</head>
+
+<body style="font-family: Verdana; font-size: 10pt">
+<h3> MPDEAB Overview</h3>
+The Multi-Project DEAB (MPDEAB) is a tool intended to help manage multiple dependent deab
+projects. In some sense, it is similar to MAKE utility of the C.
+<p>&nbsp;</p>
+<h3>How it works</h3>
+<p>MPDEAB uses an <a href="MPDEAB%20Project%20File%20Dscr.htm">MPDEAB Project File</a>
+to accept description of DEAB Project dependencies and store working information
+(like time stamps).</p>
+<p>There are two kinds of dependencies:</p>
+<ul>
+  <li>A DEAB Project depends on other DEAB Project(s). It means that the target
+    of a DEAB file is to be built if the DEAB Timestamp is less than a time
+    stamp of any of DEAB Projects it depends on. MPDEAB controls DEAB Timestamps
+    and stores them in <a href="MPDEAB%20Project%20File%20Dscr.htm">MPDEAB
+    Project File</a>.<br>
+  </li>
+  <li>A DEAB Project depends on arbitrary file(s). It means that the target of a
+    DEAB file is to be built if the DEAB Timestamp is less than a time stamp
+    of any of files it depends on. MPDEAB retrieves files' time stamps from an OS File System, it does not control files' time stamps.</li>
+</ul>
+<p>MPDEAB can treat either all DEAB Projects in a <a href="MPDEAB%20Project%20File%20Dscr.htm">MPDEAB
+    Project File</a> or only requested one(s). When MPDEAB is run to process a
+project file, it analyzes dependency hierarchies of the requested DEAB Projects,
+and determines a set of DEAB Projects involved and an order to treat them. The
+deeper a DEAB Project is in a hierarchy, the earlier it is treated. This way, if
+a DEAB Project need be built, all its dependents (both direct and indirect) in
+the requested hierarchies should be build as well.</p>
+<h4>Parameters</h4>
+<p>MPDEAB accepts the parameters:</p>
+<ul>
+  <li><b>MPDEAB Project File</b> (required)</li>
+  <li><b>DEAB File Tags</b> specifies desired DEAB Projects to process. If it is
+    not specified (by default), MPDEAB treats all DEAB Projects of the project
+    file.</li>
+  <li><b>Mode</b> specifies a processing mode. Available modes are described
+    below.</li>
+</ul>
+<h4>Working modes</h4>
+<p><b>Build</b><br>
+MPDEAB checks which DEAB Projects in the given hierarchies are out-of-date (need
+be built), and builds only out-of-date DEAB Projects. All successfully built
+DEAB Projects accept new time stamp. If an error occurred while a build of a
+DEAB Project, MPDEAB terminates processing. A report is written to a log file.</p>
+<p><b>Build always</b><br>
+MPDEAB ignores any time stamps and builds all DEAB Projects in the given
+hierarchies. A report is written to a log file. All successfully built DEAB
+Projects accept new time stamp. If an error occurred while a build of a DEAB
+Project, MPDEAB terminates processing. A report is written to a log file.</p>
+<p><b>Check w/o build</b><br>
+MPDEAB checks which DEAB Projects in the given hierarchies are out-of-date (need
+be built), but does not perform a build; time stamps are not changed as well. A
+report is written to a log file.</p>
+<p><b>Update time stamps</b><br>
+MPDEAB sets time stamps of all DEAB Projects in the given hierarchies to
+up-to-date value. A report is written to a log file.</p>
+<p><b>Reset time stamps</b><br>
+MPDEAB sets time stamps of all DEAB Projects in the given hierarchies to
+out-of-date value. A report is written to a log file.</p>
+<p>&nbsp;</p>
+<h3>Glossary</h3>
+<p><b>MPDEAB
+    Project File</b> is a file that contains information on DEAB Projects and
+their dependencies.</p>
+<p><b>DEAB File Tag</b> is a unique identifier specified in MPDEAB Project File
+and associated with a DEAB Build File. A DEAB File Tag is used to refer to the
+respective DEAB Build File in a project file and in a MPDEAB call.</p>
+<p><b>DEAB Project</b>  term is associated with a DEAB Build File specified in a
+MPDEAB
+    Project File and a target application of the DEAB Build File. See DEAB
+documentation for more information.</p>
+<p><b>DEAB Timestamp</b>  is a time stamp assigned to a DEAB Project and stored
+in a MPDEAB
+    Project File. MPDEAB updates a DEAB Timestamp if the DEAB Project is
+successfully built.</p>
+<p>&nbsp;</p>
+<hr>
+<p>Other MPDEAB Documents:</p>
+<ul>
+  <li><a href="MPDEAB%20Project%20File%20Dscr.htm">MPDEAB Project File Format</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+12:54 04-10-2004 (MZL)
+
+1) GUI Design should be simula to LV-AB but the windows (and objects) should be scaleable
+2) New feature to DEAB should be handling of LabVIEW DSC build
+3) LVDSC should show in the GUI as a TAB, if DSC is NOT installed then the TAB is GRAY
+4) When building apps. incl. LVDSC OPC/VI servers DEAB should also be able to register servers and move them to the runtime lib. (options)
+4.1) LVDSC OPC/VI servers should also be able to unregister servers 
+5) General, visuel and "intelligent" Error handling is a must
+6) The window/table showing all the VI's / files incl. in the build should be sortable and it should possible to change attributes on more files at the same time
+7) Windows Explorer function that opens Explorer in different directories, e.g. "Explorer Runtime dir", Explorer support file dir" and so on.
+8) We should work hard on Optimizing the build speed !!! this is really important 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

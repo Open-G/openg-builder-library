@@ -1,0 +1,56 @@
+[Test Build 001.ogbld]
+Version=1.2.3
+Build_Number=33
+Build_Date="05.03.2005 13:23:05"
+Status=OK
+Warnings=0
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 002.ogbld]
+Version=1.2.3
+Build_Number=3
+Build_Date="04.01.2005 18:04:39"
+Status=OK
+Warnings=0
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 001+.ogbld]
+Version=0.0.0
+Build_Number=1
+Build_Date="20.01.2005 11:07:16"
+Status=OK
+Warnings=0
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 003.ogbld]
+Version=0.0.0
+Build_Number=22
+Build_Date="08.09.2005 18:11:05"
+Status=OK
+Warnings=0
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 004.ogbld]
+Version=0.1.5
+Build_Number=21
+Build_Date="08.04.2006 13:00:54"
+Status=ERROR
+Warnings=1
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 005.ogbld]
+Version=0.0.0
+Build_Number=10
+Build_Date="08.04.2006 14:09:44"
+Status=ERROR
+Warnings=1
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+
+[Test Build 006.ogbld]
+Version=0.0.0
+Build_Number=7
+Build_Date="08.04.2006 14:26:37"
+Status=OK
+Warnings=0
+Log_File="/C/Shared Projects/OpenG/deab/example_projects/Test 001/deab_build.log"
+

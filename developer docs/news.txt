@@ -1,0 +1,686 @@
+
+All the new features need be tested more carefully than it's done. More, a testing has
+been performed on Windows platform only (W2K)
+
+
+*** 15:05 09.04.2006 (JK)
+
+- OGB: New feature: Added better support for LabVIEW >= 8.0.  In LV >= 8.0 the build is now done in a seperate application instance.
+- OGB GUI: Change: Several checkboxes were changed such that the visible ext is the clickable Boolean text, rather than the non-clickable caption/label.
+
+
+*** 17:05 08.04.2006 (KS)
+
+- OGB: New feature: Support of AppFlags and LVTR Res Flags.
+- OGB: New feature: Debugging state can be changed for VIs of every Destination separately.
+- OGB GUI: Change: Resource tab was renamed to Advanced. Now it contains parameters to build executables also.
+- OGB GUI: Change: Controls at Destination tab are rearranged, and new one added.
+
+
+*** 09:03 07.01.2006 (JK)	[OGB released as v1.0.0-beta04-1]
+
+- OGB: Bug fix: "There is bug in NI's librarian VI "<vi.lib>/utility/libraryn.llb/Copy From Folder To Folder.vi, which is a race condition between the delete file function and the copy function.  Builder was rebuilt with the ogpatch_librarian_bugfix-1.0-1.ogp package (which fixes the bug) installed".
+
+
+*** 09:03 28.10.2005 (KS)
+
+- OGB: Bug fix: "Commonly there is an error generated, which says that VIs need to be unloaded but
+  no VIs are given in the recommendation of VIs to unload." A bug found in "Get Top-Level and Opened VIs to Unload.vi".
+
+
+*** 18:51 07.10.2005 (KS)	[OGB released as v1.0.0-beta03-1]
+
+- OGB GUI: New feature: Listboxes support Drag & Drop of elements (convenient to re-arrange lists). The feature
+  works in LV70 or greater only (LV61 does not supports Drag&Drop for MC Listboxes).
+- OGB GUI: New feature: 'Build Version Control' dialog: it is possible to create a new Version VI now. In this case,
+  the new VI will be automatically added to the build as a dynamic VI.
+- OGB GUI: Change: 'Build Version Control' dialog: If you look for a Version VI ('Find...' button), you do not search
+  a VI on disk anymore; instead, you look for it in a list of VIs of the build hierarchy.
+- OGB GUI: Bug fix: It was impossible to add a top-level VI if a dynamic VI is selected in the TL&D VI List.
+
+*** 18:12 06.10.2005 (KS)
+
+- OGB: Bug fix: "DEAB Read Path Key.vi" did not allow to have quotation marks in a file path.
+- OGB GUI: New feature: Import/export dynamic VI paths from/to plain text file or another build file (import only).
+
+
+*** 09:42 16.09.2005 (KS)	[OGB released as v1.0.0-beta02-2]
+
+- Builder Launcher VI is improved.
+
+
+*** 10:32 15.09.2005 (KS)
+
+- OGB GUI: New Help>>Online menu options.
+- OGB GUI: Lost properties of updated buttons are restored.
+- OGB GUI: Icons of some buttons changed.
+- OGB GUI: When "Save As..." option selected, a default file name is suggested now.
+
+
+*** 19:52 13.09.2005 (KS)
+
+- OGB GUI: PJM added nice icons to buttons on main window and dialog boxes. Unfortunately, updated buttons
+  have lost some their properties like Description, Tip and Key Navigation.
+
+
+*** 12:27 09.09.2005 (KS)	[OGB released as v1.0.0-beta01-1]
+
+- OGB: build speed increased by setting of "LLB Caching = TRUE" before start saving VIs.
+- OGB: new options for Support files: 1) Copy files recursively 2) Exclusion paths and/or patterns.
+- OGB: some not-essential bugs fixed
+- OGB GUI: updated to reflect new Support Files features, plus some other minor improvements.
+
+
+*** 12:10 30.07.2005 (KS)
+
+- OGB GUI: "Support Files" listbox indicates both sorce files and target directories now.
+- OGB GUI: "Destinations", "Exclusion Paths" and "Support Files" listboxes display absolute paths for
+  ones desired to be used as absolute ("Use absolute path" parameter).
+- OGB GUI: Smart detection of 'build parameters changed' condition ('*' indicator in the window title).
+  Now, the condition is only met (and '*' is present) if the current build parameters differ from
+  original (loaded) ones.
+
+
+*** 18:38 22.06.2005 (KS)
+
+- OGB GUI: "Destinations" listbox indicates both source and target paths now.
+
+
+*** 10:29 20.06.2005 (KS)
+
+- OGB: "Proxy - Dist Build App from LLB.vi" is updated to support LV80. A build under LV8 has not yet been tested!
+
+
+*** 15:36 28.04.2005 (KS)
+
+- OGB & OGIB: message if NIAB is required but absent.
+- OGB: Undocumented feature to mangle/change VI name according to a match pattern (in addition to attaching
+  a namespace as suffix/prefix). For more info review "source\support\DEAB Mangle VI Name.vi".
+
+
+*** 19:47 27.04.2005 (KS)
+
+- OGB: a new option "Namespace convention" specifies how a Namespace is to be attached to VI names. It can
+  be attached either as a suffix (OpenG name mangling convention) or as a prefix.
+- OGB GUI: an option to automatically load the most recent build file at startup.
+- OGB GUI: browse buttons of Dest Source, Dest Target and Exclusion path allow selecting directory, file or 
+  file in LLB when OGB is running in LV7.0 or greater.
+
+- OGIB: support of patterns to exclude directories and/or files from an installation. Exclusion patterns
+  have a global scope. To exclude a particular file or directory, Exclusion path should be used (it can
+  specify either a file or an entire directory now).
+- OGIB: list of files included to an installation can be reviewed before a build starts.
+
+
+*** 12:51 23.04.2005 (KS)
+
+=== News relate to MSI Installer Builder.
+- An exclusion path may be a file path or a directory path now. If an exclusion path is a directory path,
+  the entire directory (with all files/dirs beneath it) will not be included to installation. A use of
+  wildcards is still possible to specify a group of files or directories.
+- New feature (ongoing, not complete yet): file and directory patterns to exclude files/dirs from installation.
+  Exclude patterns have a global scope; i.e. they affect any file/dir matching found in App Image Directory.
+  The feature is not tested and has no support in GUI yet.
+
+
+
+*** 14:39 13.04.2005 (KS)
+
+- "OGB_Builder.llb\OGB Builder.vi"E: it can process a few build/spec files during one run.
+
+
+*** 16:49 12.04.2005 (JK)
+
+- "DEAB API": OGB package now includes a DEAB API for legacy support.  This adds DEAB API VIs which will actually call into the OGB.
+
+
+*** 18:49 14.03.2005 (KS)
+
+- "Save Level": OGB more precisely determines if a VI's FP can be removed
+
+
+*** 16:25 05.03.2005 (KS)
+
+- New "Save Level" feature is now used insted of "Remove VI Diagram" function.
+  Save Level specified for a destination is used as default. If a default Save Level assumes
+  removing VI FP, OGB does not remove FP of Top-Level and Dynamic VIs. In addition, it analyses
+  all other VIs and does not remove a VI's FP if the VI contains a Property Node, an Invoke Node
+  or a Control Reference statically linked to the VI's control(s).
+  Save Level can be changed for any VI on VI Property tab. Such customized Save Levels are used
+  "as is" during a build, OGB does not change any.
+
+
+*** 12:58 26.02.2005 (KS)
+
+- OGB GUI can import NIAB .bld files. Restrictions:
+	1) Destination is common EXE file even if NIAB builds an EXE + support LLB
+	2) Installer info is not imported
+- Target EXEs can now accept command line arguments
+
+- There is new "OGB Test VI for Self-Referencing.vi" that is a start point of work on new
+  "Remove FP"/"Save Level" feature discussed in Y!. The VI tests if a given VI has Property Node,
+  Invoke Node or Reference statically linked to its control(s).
+
+
+*** 10:47 02.02.2005 (KS)
+
+- [FIX] "Build New Application" dialog box returned paths represented in an incorrect format
+  (pathroots instead of absolute paths). It caused problems reported on OpenG forum by
+  'eodickens' in "Exclude vi.lib & user.lib from Build New Applicaiton dia" topic.
+
+
+*** 18:36 01.02.2005 (KS)
+
+- GUI: Quick check of VI linking (read from files w/o load of VIs) is performed when a build
+  file is loaded. It can be enabled/disabled on new Option tab.
+- GUI: Updated "all VIs of build hierarchy" dialog box.
+
+
+*** 15:19 31.01.2005 (KS)
+
+- GUI: Possibility to review all VIs of a build hierarchy (Source File tab)
+- GUI: An additional way to select a VI whose properties need be customized. A VI can be
+  selected from a list of all VIs involved to a build.
+- GUI: The "Open VI" button on "Adv. VI Properties" tab works now.
+
+
+*** 11:26 20.01.2005 (KS)
+
+- GUI: LLB extension is now allowed in directory path.
+- GUI: <KeepHierarchy> tag is treated more correctly when a user modifies a Destination path.
+- GUI: Updated "VI Property List" dialog
+- Some VIs intended to get VI property list and set VI properties are updated.
+
+
+*** 13:32 18.01.2005 (KS)
+
+- New Dialog box to select a VI property. It retrieves and lists names and types of all VI
+  properties available in the current LabVIEW version. Property names are represented in
+  Short Name format and can be directly used to set custom VI properties at build time.
+  A way to retrieve property names in Full Name format is not found (yet?).
+
+
+*** 18:39 15.01.2005 (KS)
+
+- New Feature: Set Custom VI Properties at build time. Both OGB Core & GUI. There are some
+  things in GUI that are not completely done. The simplest way to learn about it is to run
+  GUI and "Add Examples" to property list on the VI Property tab.
+  Tested a little bit in LV61 only, need be tested in other versions and on other platforms.
+
+
+
+*** 17:39 04.01.2005 (KS)
+
+- Help launcher (OpenG Builder Documentation.vi). The way to open the index.html is changed.
+  Mark reported that url is "corrupted" when it is opened in IE (not always but sometimes).
+  I have not been able to reproduce the issue, but the change has fixed the issue.
+
+- New Quick Tips. New features to format tip's text.
+
+
+
+*** 14:38 30.12.2004 (KS)
+
+- Description added to controls of OGB GUI windows. Can be reviewed in Context Help window
+ (Ctrl-H) at runtime.
+
+- New Quick Tips window. It starts at OGB GUI startup (if not forbidden), can also be opened
+  through "Help>>Quick Tips" menu.
+
+- Quick tips are defined in new "OGB_Tips.ini" file. Currently, the file contains only a few
+  tips to demonstrate capabilities of OGB Quick Tip feature. The file needs to be filled with
+  more tips. To make this easy, the file contains file format description as a comment.
+
+- "OGB_Tips.ini" file (<deab>\source\gui\OGB_Tips.ini) is now included as a support file to
+  OGB Build file (build_ogb.deab).
+
+
+
+*** 14:31 18.12.2004 (KS)
+
+- [FIX] OGB GUI informed on unimplemented function if double-click on Destination list's item.
+  A respective event case was forgotten to be removed when "Edit Destination" dialog box was
+  disposed.
+
+- Some VERY minor cosmetic and code changes
+
+
+
+*** 01:30 18.12.2004 (JK)
+
+- GUI: added an "Open VI" feature for the Source Files that is triggered by a button press of
+  "Open VI" or by double-clinking the "Top-Level & Dynamic VIs" listbox.
+
+
+
+*** 19:13 17.12.2004 (KS)
+
+- GUI: new way to work on Destinations. No dialog box is more used to add and edit destinations.
+
+- GUI: new way to edit both default and destination specific Namespaces/Passwords.
+
+- Other GUI adjustments/improvements.
+
+- OGB API + GUI: a draft to launch OGB GUI to edit a build file. Review "OpenG_Builder.vi" and
+  <source\Dynamic API\Launch OGB GUI.vi".
+
+
+
+*** 11:08 17.12.2004 (KS)
+
+- [FIX] "Verify if Sources can be Removed" was failing for Express VI builds.
+  New way to fix the problem: invalid paths are ignored during verification.
+
+- [FIX] Opening documentation if "OpenG Builder.vi": "OpenG Builder Documentation.vi"
+  has the __ogb suffix when it is built.
+
+
+
+*** 10:20 16.12.2004 (JK)
+
+- [FIX] "Verify if Sources can be Removed" was failing for Express VI builds
+
+
+
+*** 16:12 15.12.2004 (KS)
+
+- Protection against removing source and support files
+
+- new way to edit destinations in OGB GUI
+
+- some other GUI improvements
+
+
+
+*** 19:52 14.12.2004 (KS)
+
+- it's possible to build a target that consists of support files only (without VIs)
+
+- OGB uses an extension of executable depending on a platform it runs
+
+- more GUI improvements (new build property advisor/wizard)
+
+
+
+*** 11:51 10.12.2004 (KS)
+
+- 3 API VIs are renamed
+
+- Bug fixed: API VIs use correct paths to core VIs now
+
+- Bug fixed: No more linker error if an application calls an Express VI that is linked
+  to a non-VI resource(s); e.g. Shared Library. Express VI are now ignored to save.
+
+
+
+*** 19:26 09.12.2004 (KS)
+
+- Default value for 'Help File Dir', 'Shared Lib Dir' and 'External Subr Dir' is
+  <Build Root> now. The change is reflected in 'OGB Build File Dscr.html'.
+
+- Doc files are revised. All instances of 'DEAB' are replaced with 'OGB'. Links are
+  changed to correctly point to renamed OGB doc files.
+
+- OGB Core: a bugs fixed. Was error of creating target dir if destination: EXE=ON, LLB=OFF
+  and a VI is linked to .rtm file.
+
+- OGB GUI: a few bugs fixed. More GUI features implemented.
+
+
+
+*** 18:10 04.12.2004 (JK)
+
+- Bug fixed: "New VI Library (proxy).vi" used incorrect case for vi.lib/Utility 
+folder (was "vi.lib/utility"), when building path for dynamic call.
+
+- Bug fixed: DEAB and DEAB API build files had incorrect case for some file/folder 
+names and weren't using universal file path seperator "/" (was using the windows path
+ seperator "\").
+
+- Bug fixed: DEAB Builder was using a string constant for storing relative path 
+information that included path seperators.  Always use a path constant (not string 
+constant) since LabVIEW will automatically convert the path seperator to the target 
+platform.
+
+
+
+*** 12:44 20.11.2004 (KS)
+
+- Bug fixed: Open VI Reference accepts an 'option' equal 2 whenever it is called for
+  VIs of a build hierarchy.
+
+- Error messages are more informative.
+
+- Call-Back VI: new "Extra Operative Info" cluster.
+
+- Description of "Allow CBVI & Build Hierarchy Overlap" is revised in
+  DEAB Build File Dscr.htm
+
+
+
+*** 19:24 19.11.2004 (KS)
+
+- General section: Call-Back VI key (Call-Back VI N keys). Specifies Call-Back VI(s).
+
+- General section: Allow CBVI & Build Hierarchy Overlap key. Allows VIs of a
+  Call-Back VI hierarchy be in a Build hierarchy too.
+
+- Destination section: Namespace key. It overrides Namespace from General section.
+
+- Both 'Apply New Password' and 'Namespace' keywords in General and Destination
+  sections can accept <none>, <random> and <random:N> keywords. Note that it is new
+  for 'Namespace' and changed for 'Apply New Password'.
+
+- If no error occured during a build, a Revision File is updated before a
+  Post-Build VI is called.
+
+- DAEB File Dscr.htm is renamed to DEAB Build File Dscr.htm
+
+- DEAB Build File Dscr.htm file is updated to reflect the changes.
+
+
+
+*** 18:50 12.11.2004 (KS)
+
+- DEAB was migrated to LabVIEW 6.1
+
+- LV's 'Simple Error Handler.vi' is now called dynamically. The reason:
+  'Error Code Database.vi' calls different function from LabVIEW.exe. DEAB built in
+  LV61 refers to unexistent function when it is loaded in LV71.
+
+- General section: RemovePolyVIsAndTypedefs key.
+
+- DEAB File Dscr.htm file is updated to reflect the changes.
+
+
+
+*** 18:38 10.11.2004 (KS)
+
+- Strange LV behavior was encountered that resulted in a bug to build DEAB (in LV60).
+  If a 'VI Type' property is called just before we save a VI, its callers in a built
+  DEAB are wrong linked to it. The bug related to the DEAB code uploaded on 09.11.2004.
+  The bug is fixed by finding a workaround, but LV behavior is really strange.
+
+
+
+*** 17:28 09.11.2004 (KS)
+
+- General section: 'Apply New Password' key specifies a default password for all VIs.
+
+- Destination N section: 'Apply New Password' key specifies a password for VIs of the
+  destination. It can override or discard a default password.
+
+- Two special cases for a password:
+  "none" keyword discars a password for VIs of the destination.
+  "random:N" keyword makes DEAB generate a random password with the length equal to N.
+
+- DEAB Doc files (.htm) are updated to reflect the changes
+
+
+
+*** 12:21 06.11.2004 (KS)
+
+- If 'New Build Root' parameter is TRUE and 'Build Root' directory exists, the Build Root is
+  to be renamed. However, there is a pitfall when a Build Root contains a source file beneath
+  it (e.g. if Build Root is the same as Source Root because both are pointed as an empty
+  string in a .deab file.
+  Now, DEAB tests if a source VI or resource file resides beneath a Build Root and generates
+  a fatal error if any found (note that it is only applicable if 'New Build Root' parameter
+  is TRUE).
+  DEAB File Dscr.htm file contains updated info in description of 'New Build Root'.
+
+
+
+*** 19:06 05.11.2004 (KS)
+
+- General Section: Revision File key.
+
+- General Section: Version VI Name key.
+
+- General Section: Version Ctrl key.
+
+- DEAB Glossary.htm
+  Definitions are added for "Revision File" and "Build File".
+
+- DEAB File Dscr.htm
+  a) Descripton are added for "Revision File", "Version VI Name" and "Version Ctrl Name"
+  b) Description of "New Build Root" is changed; please read it carefully.
+
+- <deab\DEAB_Builder.llb\DEAB Builder.vi> uses "build_deab_revisions.txt" file to save
+  version/build information in a target DEAB build. I.e. the "DEAB Current Version__deab.vi"
+  will return a version, build number and build date/time of when it was built.
+
+
+
+*** 19:35 03.11.2004 (KS)
+
+- A set and code of both Static and Dynamic API VIs changed
+
+- Comments and Description added to most of VIs
+
+- DEAB can now treat Express VIs
+
+- Bug fixed: it was possible to incorrectly report on a set of top-level VIs need
+  be unloaded.
+
+- etc.
+
+
+
+*** 19:24 02.11.2004 (KS)
+
+- General section: new File Format Version key.
+
+- General section: TheLeastNumberedDestinationIsDefault key is removed
+
+- Destination section: new Default Destination key.
+
+- Validates .deab file for unsupported sections/keys and file format version.
+
+- new Read Build Parameters.vi
+
+- new Build Parameters typedef
+
+- Pre-/Post-Build VI Template is changed. It uses new Build Parameters.ctl typedef
+
+- Bug fixed: Mangle VI Name__ogtk.vi produces wrong result if a file name contains more
+  than one dot (period). A copy of this VI with fixed the bug is now a part of DEAB
+
+- etc.
+
+
+
+*** 18:41 27.10.2004 (KS)
+
+- DEAB builds itself now. No need in "<deab>\build support" more; use 
+  "<deab>\DEAB_Builder.llb\DEAB Builder.vi" instead. Two .deab files provided define how to
+  build both static & dynamic API.
+
+
+
+*** 19:27 25.10.2004 (KS)
+
+- 'Ambiguous' VIs are treated more correctly to determine their destination dir/llb.
+  Furthermore, 'ambiguous' VIs are now ignored when support files are copied with
+  FollowVIDirHierarchy option set to TRUE.
+
+- A doc file (draft) describing parameters of a .deab file:
+ <deab\developer docs\DEAB File Dscr.htm>
+
+
+
+*** 15:38 23.10.2004 (KS)
+
+- Pre/Post-Build VI(s).
+
+  a) A VI name/path can be specified in a .deab file, General section: Call Pre-Build VI
+  and Call Post-Build VI keys. <deab\example_projects\Test 001\Test Build.deab> file
+  contains comments on new keys.
+
+  b) There is "Pre-Post Build VI Example.vi" in <deab\example_projects\Test 001>. Calls of
+  it should be enabled in Test Build.deab to be tested.
+
+  c) There is a "Pre-Post Build VI Template.vi" in <deab\source\Dynamic API> dir. A built 
+  version of it should be used to create a custom pre/post-build VI. The VI is now a part
+  of Dynamic API.
+  
+
+
+*** 12:17 22.10.2004 (KS)
+
+- A bug fixed: It was figured out that LV Librarian fails if it's 'error in' cluster
+  contains error code equal to 43 (cancelled by user) even if error status is False.
+  On some conditions, DEAB could provide this situation that caused fault of copying
+  RTM files. The bug is fixed.
+
+- DEAB Build Progress Info.vi is changed. Now, it has a progress bar and displays
+  time elapsed since a build had started.
+
+
+
+*** 19:35 21.10.2004 (KS)
+
+- FollowVIDirHierarchy: key in SupportFiles section.
+  The behavior is changed. Now, it is possible to copy support files for VIs located
+  outside of Source Root directory.
+
+- Unsaved Changes MsgBox: new key in General section.
+  Enables/Disable a dialog box if there are VIs with unsaved changes.
+
+- Ambiguous VIs Dest Dir: new key in General section.
+  Makes it possible to save a VI, callers of which expect to load it from different
+  locations, to the specified directory.
+
+- Log Dir: new key in General section.
+  Allows to specify directory to save log file.
+
+- Log File Suffix: new key in General section.
+  Allows to specify a suffix to be appended to name of log file. A suffix can contain
+  date/time format specifiers.
+
+- Log File contains a report on 'Ambiguous VIs'.
+
+- Test for missed/extra quotation marks in file names: protection against human errors.
+
+
+Test Build.deab file in an <deab\example_projects\Test 001> contains comments on new and
+updated keys.
+
+
+
+*** 17:13 14.10.2004 (KS)
+
+- Bug fixed. Linker info could be changed for VIs excluded from a build. Now, only VIs
+  included to a build can be relinked to non-VI resources.
+
+- Building speed is much better now.
+
+- General section: New Build Root key. If it is TRUE and a Build Root directory exists, the
+  directory will be renamed and new one will be created.
+
+- Progress status window contains a .deab file name.
+
+- A .deab file and a vi to build ogpi20. See <deab\example_projects\ogpi20 builder>
+
+
+Test Build.deab file in an <deab\example_projects\Test 001> contains comments on new key(s).
+
+
+
+*** 18:48 09.10.2004 (KS)
+
+- Tests source VIs for unsaved changes and reports info in log file (as warning). This can
+  happen e.g. if location of VIs or non-VI resources was changed, or a change of a VI/Typedef
+  requires its caller be recompiled but it was not done.
+
+- Reports an error of reading linker info from VI and resource files in details. A typical
+  error is a change of file location.
+
+
+
+*** 19:39 08.10.2004 (KS)
+
+- General section: New Include Hidden VIs key specifies whether hidden VIs should be
+  included in a build or not.
+
+- General section: EXE Icon File key specifies a custom icon for executables.
+
+- SupportFiles section: New FollowVIDirHierarchy key. If it is TRUE, SourceFiles are
+  copied according to directory hierarchy of VIs involved to building.
+
+- Log File contains report on VIs and non-VI resources that was not included in a build.
+
+Test Build.deab file in an <deab\example_projects\Test 001> contains comments on new features.
+
+
+
+*** 19:41 07.10.2004 (KS)
+
+- Building EXE: VIs are saved to LLB that has a target executable's name (with exe extension).
+  It makes VIs saved outside the exe be correctly linked to VIs saved within the exe.
+
+- Managing of target Dirs, LLBs and resource files is more correct now.
+
+
+
+*** 19:51 06.10.2004 (KS)
+
+- [Destination N] sections: New option to write VIs to Target Dir keeping VIs hierarchy
+  as it is in Source Dir.
+
+Test Build.deab file in an <deab\example_projects\Test 001> contains comments on the new
+feature in [Destination N] section.
+
+
+
+*** 19:50 05.10.2004 (KS)
+
+- A build can now be aborted
+- Log file can be specified in .deab file (optional)
+- A default destination can now be allowed. The default is a destination with the least 
+  number in [Destination N]
+- Support files: if no source files specified for a target dir, dir is created anyway
+
+Test Build.deab file in an <deab\example_projects\Test 001> contains comments on new features
+
+
+
+*** 19:31 04.10.2004 (KS)
+
+- Top-Level VIs in EXEs: Have 'Run When Opened' property set to True
+- LLBs: VIs are directly written to LLBs now (instead of saving VIs to Dirs with further
+  conversion of Dirs to LLBs). It significantly reduces total time to build LLBs.
+- Method of loading VIs and testing for VIs 'are already in memory' condition changed in
+  order to speed up building.
+- Other changes intended to speed up building.
+- Non-fatal errors are reported as a warning in an 'error out' cluster.
+
+An application involving 597 VIs, DLLs, CINs, Help files was successfully built.
+The application (EXE) works correctly. Time spent to build was more than 3 times less
+than in previous release.
+
+
+
+*** 19:36 01.10.2004 (KS)
+
+- More correctly copies and relinks Shared Libraries. System libraries (more exactly,
+  libraries on which linker info does not contain an absolute path) are not copied more.
+- Build logging is improved
+- Progress indicator is added
+
+Trial build of a large application result:
+All phases seem to complete except an EXE was not created (a reason is not known yet)
+DLLs and Help files seemed to be copied and relinked correctly.
+
+
+
+*** 19:49 30.09.2004 (KS)
+
+- More correctly copies and relinks resources (DLLs, RTMs, Help files, etc.)
+- Supports "Support Files" :-)
+- Writes Build Log File
+- More detailed info on error conditions (VI, dir, file names)
+- Test Build.deab file in an <deab\example_projects\Test 001> contains comments on new features
+
+
+
