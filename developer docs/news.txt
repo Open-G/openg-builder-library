@@ -3,6 +3,12 @@ All the new features need be tested more carefully than it's done. More, a testi
 been performed on Windows platform only (W2K)
 
 
+*** 18:29 17.05.2006 (KS)
+
+- OGB: New feature: When OGB GUI starts, it verifies if its VIs are modified or new Sub-VIs are added to it (e.g. LV8 compatibility VIs). In the case, Builder informs a user and rebuilds itself if allowed. Launcher VI saves itself also if required.
+- OGB: Bug fix: <preferences> pathroot works correctly now in LV8
+
+
 *** 15:05 09.04.2006 (JK)
 
 - OGB: New feature: Added better support for LabVIEW >= 8.0.  In LV >= 8.0 the build is now done in a seperate application instance.
