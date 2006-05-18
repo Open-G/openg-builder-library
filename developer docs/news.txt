@@ -3,7 +3,7 @@ All the new features need be tested more carefully than it's done. More, a testi
 been performed on Windows platform only (W2K)
 
 
-*** 19:58 17.05.2006 (KS)
+*** 19:58 17.05.2006 (KS)	[OGB released as v1.0.0-beta05-1]
 
 - OGB: New feature: When OGB GUI starts, it verifies if its VIs are modified (e.g. newer LV version) or new Sub-VIs are added to it (e.g. LV8 compatibility VIs). In the case, Builder informs a user and rebuilds itself if allowed.
 - OGB: Change: Launcher is changed (new progress bar). Also, Launcher VI saves itself if required (e.g. newer LV version).
