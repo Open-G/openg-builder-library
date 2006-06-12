@@ -56,6 +56,7 @@ DynVI 2="support/Generic Set Single Property Template.vi"
 DynVI 3="support/Generic VI Property Template.vi"
 
 [Exclude Lib Dirs from Build]
+LibDir 1=<vi.lib>
 ##########################=""
 
 [Destination 1]
