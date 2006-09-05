@@ -1,31 +1,31 @@
 [build_ogb.deab]
 Version=1.0.0-beta06
-Build_Number=269
-Build_Date="23.05.2006 13:14:26"
+Build_Number=274
+Build_Date="05.09.2006 14:38:57"
 Status=OK
 Warnings=0
 Log_File="/C/Shared Projects/OpenG/Builder (SVN)/built/build_ogb.log"
 
 [build_ogb_api.deab]
 Version=1.0.0-beta06
-Build_Number=172
-Build_Date="23.05.2006 13:16:18"
+Build_Number=175
+Build_Date="05.09.2006 14:40:38"
 Status=OK
 Warnings=0
 Log_File="/C/Shared Projects/OpenG/Builder (SVN)/built/build_ogb_api.log"
 
 [build_ogb_deab.deab]
 Version=1.0.0-beta06
-Build_Number=81
-Build_Date="23.05.2006 13:16:29"
+Build_Number=84
+Build_Date="05.09.2006 14:40:50"
 Status=OK
 Warnings=0
 Log_File="/C/Shared Projects/OpenG/Builder (SVN)/built/build_ogb_deab.log"
 
 [build_ogb_help.deab]
 Version=1.0.0-beta06
-Build_Number=127
-Build_Date="23.05.2006 13:16:34"
+Build_Number=130
+Build_Date="05.09.2006 14:40:55"
 Status=OK
 Warnings=0
 Log_File="/C/Shared Projects/OpenG/Builder (SVN)/built/build_ogb_help.log"
