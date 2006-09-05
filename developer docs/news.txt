@@ -3,6 +3,16 @@ All the new features need be tested more carefully than it's done. More, a testi
 been performed on Windows platform only (W2K)
 
 
+*** 16:04 05.09.2006 (KS)
+
+OGB: LVLIB files are included to a build now, a destination of LVLIB is selected the same way as for VIs. HOWEVER...
+1) including LVLIB to a build seems not solve all problems. When a built EXE starts, I observe a message like this:
+"VI has an error of type 2002200. The full development version of LabVIEW is required to fix the errors."
+2) there is uncertainty of resource type code returned by "Read Linker Info from File.vi".
+The LV method employed has type code enum that assumes value of 9 for Library, but actually, the method returns code of 10 for Library.
+To provide compatibility, I changed "Link Type - Enum.ctl", it has 2 values for Library type (9 and 10) now.
+
+
 *** 12:35 11.06.2006 (JK)	[OGB released as v1.0.0-beta06-1]
 
 - OGB: New feature: Since Builder now does a self-build on first launch, vi.lib (NI) components are no longer built into Builder, prior to distribution.  This allows builder to build in these components on the target system.  This is important, since vi.lib components may be platform specific, and also bugs can be fixed by NI in newer versions of LabVIEW.
