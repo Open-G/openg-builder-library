@@ -135,3 +135,10 @@ Recursive=FALSE
 Exclude=FALSE
 SourceFile 1="Support/DEAB Open LV80 Project App Reference.vi"
 
+[SupportFiles 3]
+TargetDir="LV8 support"
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1="LabVIEW 8.0 Support/*_(Proxy).vi"
