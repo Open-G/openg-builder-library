@@ -141,4 +141,6 @@ OverwriteExisting=TRUE
 FollowVIDirHierarchy=FALSE
 Recursive=FALSE
 Exclude=FALSE
-SourceFile 1="LabVIEW 8.0 Support/*_(Proxy).vi"
+SourceFile 1="LabVIEW 8.0 Support/Library.Open.vi"
+SourceFile 2="LabVIEW 8.0 Support/Library.Save.vi"
+SourceFile 3="LabVIEW 8.0 Support/Library.Close.vi"
