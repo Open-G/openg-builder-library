@@ -2,6 +2,10 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+*** 17:37 11.09.2006 (JK)	[OGB released as v1.0.0-beta07-1]
+
+- OGB Fix: LVLIB files are now opened using VI Server, prior to the build, and saved with VI Server, after the build, in order for linkages between built library members and libraries to be maintained.
+
 
 *** 16:04 05.09.2006 (KS)
 
