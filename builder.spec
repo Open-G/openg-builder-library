@@ -41,13 +41,16 @@ Num File Groups=6
 Source Dir=built/rsc
 Target Dir=<resource>/OpenG/build
 Replace Mode=Always
-Num Files=6
+Num Files=9
 File 0=ogb.llb
 File 1=ogb_gui.llb
 File 2=ogb_NI.llb
 File 3=ogb_OpenG.llb
 File 4=OGB_Tips.ini
 File 5="LV8 support/DEAB Open LV80 Project App Reference.vi"
+File 6="LV8 support/Library.Close.vi"
+File 7="LV8 support/Library.Open.vi"
+File 8="LV8 support/Library.Save.vi"
 
 [File Group 1]
 Source Dir=built/api
