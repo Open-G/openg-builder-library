@@ -2,6 +2,11 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+*** 19:02 28.09.2006 (JK)
+
+- OGB Fix: Fixed a bug where, during the self mass compile at first launch, all FP controls were being save with default attributes of disabled and greyed out.  This was affecting the Add buttons, in particular, since they were not being explicitly enabled, at startup.
+
+
 *** 17:37 11.09.2006 (JK)	[OGB released as v1.0.0-beta07-1]
 
 - OGB Fix: LVLIB files are now opened using VI Server, prior to the build, and saved with VI Server, after the build, in order for linkages between built library members and libraries to be maintained.
