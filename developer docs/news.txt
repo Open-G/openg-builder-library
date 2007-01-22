@@ -2,6 +2,12 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+*** 23:48 21.01.2007 (JK)
+
+- OGB Fix: Changed Adapt to Environement, so that it is called by the menu launch stub.  This prevents Builder from being in a running state, when the adapt to environment process is occurring -- this was causing problems in 8.2, since you can no longer do a Save As on a running VI.  Also, there was some very strange problem with "Librarian Delete Dialog.vi" during the Adapt to Environment step that was crashing LabVIEW.  The only solution I could find, was to make a renamed copy of the libraryn VIs inside the source (\source\Support\libraryn) -- these were prefixed with "DEAB".  Now the Adapt to Environment step is working fine in LabVIEW 8.2.
+- OGB New Feature: Builder now handles building applications with XControls and XNodes, provided that all the dependencies are included in the hierarchy of the top-level or dynamic VIs.  This was made possible by setting the Application property "Run Reserve XI Components" to TRUE in the build application instance.  This required adding a dynamically called VI, "DEAB Open LV82 Project App Reference.vi", since this property is only available in 8.2 (or greater?).
+
+
 *** 19:02 28.09.2006 (JK)
 
 - OGB Fix: Fixed a bug where, during the self mass compile at first launch, all FP controls were being save with default attributes of disabled and greyed out.  This was affecting the Add buttons, in particular, since they were not being explicitly enabled, at startup.
