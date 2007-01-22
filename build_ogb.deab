@@ -134,7 +134,7 @@ FollowVIDirHierarchy=FALSE
 Recursive=FALSE
 Exclude=FALSE
 SourceFile 1="Support/DEAB Open LV80 Project App Reference.vi"
-SourceFile 1="Support/DEAB Open LV82 Project App Reference.vi"
+SourceFile 2="Support/DEAB Open LV82 Project App Reference.vi"
 
 [SupportFiles 3]
 TargetDir="LV8 support"
