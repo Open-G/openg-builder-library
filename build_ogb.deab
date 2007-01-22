@@ -51,9 +51,8 @@ VI 2=GUI/OpenG_Builder.vi
 
 [Dynamic VIs]
 ##########################=""
-DynVI 1="Menu-Launch Stub/OpenG Builder.vi"
-DynVI 2="support/Generic Set Single Property Template.vi"
-DynVI 3="support/Generic VI Property Template.vi"
+DynVI 1="support/Generic Set Single Property Template.vi"
+DynVI 2="support/Generic VI Property Template.vi"
 
 [Exclude Lib Dirs from Build]
 LibDir 1=<vi.lib>
@@ -80,16 +79,6 @@ Apply New Password=""
 Namespace=""
 
 [Destination 3]
-Source Dir="Menu-Launch Stub"
-Target Dir=../project
-Convert Target to LLB=FALSE
-Convert Target to EXE=FALSE
-Save Level=0
-Default Destination=FALSE
-Apply New Password=""
-Namespace=<none>
-
-[Destination 4]
 Source Dir=<application>
 Target Dir=ogb_NI.llb
 Convert Target to LLB=TRUE
@@ -99,7 +88,7 @@ Default Destination=FALSE
 Apply New Password=""
 Namespace=""
 
-[Destination 5]
+[Destination 4]
 Source Dir=<user.lib>/_OpenG.lib
 Target Dir=ogb_OpenG.llb
 Convert Target to LLB=TRUE
@@ -109,7 +98,7 @@ Default Destination=FALSE
 Apply New Password=""
 Namespace=""
 
-[Destination 6]
+[Destination 5]
 Source Dir=/a/
 Target Dir=ogb_misc.llb
 Convert Target to LLB=TRUE
@@ -145,3 +134,11 @@ Exclude=FALSE
 SourceFile 1="LabVIEW 8.0 Support/Library.Open.vi"
 SourceFile 2="LabVIEW 8.0 Support/Library.Save.vi"
 SourceFile 3="LabVIEW 8.0 Support/Library.Close.vi"
+
+[SupportFiles 4]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1="Support/libraryn/libraryn.bin"

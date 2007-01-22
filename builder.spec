@@ -35,13 +35,13 @@ Requires=""
 Conflicts=ogrsc_deab>=0.0
 
 [Files]
-Num File Groups=6
+Num File Groups=7
 
 [File Group 0]
 Source Dir=built/rsc
 Target Dir=<resource>/OpenG/build
 Replace Mode=Always
-Num Files=10
+Num Files=11
 File 0=ogb.llb
 File 1=ogb_gui.llb
 File 2=ogb_NI.llb
@@ -52,6 +52,7 @@ File 6="LV8 support/DEAB Open LV82 Project App Reference.vi"
 File 7="LV8 support/Library.Close.vi"
 File 8="LV8 support/Library.Open.vi"
 File 9="LV8 support/Library.Save.vi"
+File 10="libraryn.bin"
 
 [File Group 1]
 Source Dir=built/api
@@ -81,7 +82,7 @@ Source Dir=built/project
 Target Dir=<project>
 Replace Mode=Always
 Num Files=1
-File 0="OpenG Builder.vi"
+File 0="OpenG Builder.llb"
 
 [File Group 5]
 Source Dir=built/help

@@ -1,0 +1,67 @@
+[General]
+File Format Version=1.0.1
+Namespace=ogb_menu_launch
+Project Root=""
+Source Root=source
+Build Root=built/project
+Ambiguous VIs Dest Dir=""
+
+Revision File=build_ogb_revisions.txt
+Log Dir=built
+Log File=""
+Log File Suffix=""
+#Log File Suffix=" %y_%m_%d %X"
+
+New Build Root=TRUE
+Include Hidden VIs=FALSE
+Overwrite Existing Files=TRUE
+Unsaved Changes MsgBox=TRUE
+
+Include Help Files=FALSE
+Include Shared Libs=FALSE
+Include External Subrs=FALSE
+
+Help File Dir=""
+Shared Lib Dir=""
+External Subr Dir=""
+
+EXE Icon File=""
+
+Call Pre-Build VI=""
+Call Post-Build VI=""
+
+# This does not work when DEAB source is used to build a DEAB target=""
+# A version is taken in a Post-Build VI and saved to DEAB Curren Version.vi in DEAB Builder.vi=""
+# Version VI Name="DEAB Current Version.vi"
+# Version Ctrl Name="Version Info"
+
+
+
+##########################=""
+Version VI Name=""
+Version Ctrl Name=""
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=FALSE
+Namespace Convention=0
+[Top Level VIs]
+##########################=""
+VI 1="Menu-Launch Stub/OpenG Builder.vi"
+
+[Dynamic VIs]
+#DynVI 1="Menu-Launch Stub/OpenG Builder.vi"
+
+[Exclude Lib Dirs from Build]
+#LibDir 1=<vi.lib>
+##########################=""
+
+[Destination 1]
+Source Dir=""
+Target Dir=OpenG Builder.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=TRUE
+Apply New Password=""
+Namespace=""
+
