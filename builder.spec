@@ -1,6 +1,6 @@
 [Package Name]
 Name=ogrsc_builder
-Version=1.0.0beta07
+Version=1.0.0beta08
 Release=1
 
 [Description]
@@ -48,7 +48,7 @@ File 2=ogb_NI.llb
 File 3=ogb_OpenG.llb
 File 4=OGB_Tips.ini
 File 5="LV8 support/DEAB Open LV80 Project App Reference.vi"
-File 6="LV8 support/DEAB Open LV80 Project App Reference.vi"
+File 6="LV8 support/DEAB Open LV82 Project App Reference.vi"
 File 7="LV8 support/Library.Close.vi"
 File 8="LV8 support/Library.Open.vi"
 File 9="LV8 support/Library.Save.vi"
