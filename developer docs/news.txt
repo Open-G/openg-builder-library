@@ -2,6 +2,12 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+
+*** 21:39 27.01.2007 (JK)
+
+- OGB Fix: In "Save VIs to Destinations" each VI in the project hierarchy is moved/renamed and then saved, starting at the bottom of the VI hierarchy and moving upward.  This allows callers to "sense" that a callee has been saved to a new location (with possibly a new name [mangled]).  However, since LabVIEW 8.0, Static VI References are not considered a callee (subVI) but the caller still "senses" when the referenced VI is moved and/or renamed.  As such, the bottom-up hierarchy-saving approach does not handle this scenario.  The result is that the caller's of static VI references might be unloaded from memory while having unsaved changes (since they have "sensed" that the referenced VI has been moved/renamed).  The fix (which may also mitigate other similar issues) is to check all VIs, after the renaming step occurs, for unsaved changes (modifications bit) and save any VIs that do have unsaved changes.
+
+
 *** 23:48 21.01.2007 (JK)
 
 - OGB Fix: Changed Adapt to Environement, so that it is called by the menu launch stub.  This prevents Builder from being in a running state, when the adapt to environment process is occurring -- this was causing problems in 8.2, since you can no longer do a Save As on a running VI.  Also, there was some very strange problem with "Librarian Delete Dialog.vi" during the Adapt to Environment step that was crashing LabVIEW.  The only solution I could find, was to make a renamed copy of the libraryn VIs inside the source (\source\Support\libraryn) -- these were prefixed with "DEAB".  Now the Adapt to Environment step is working fine in LabVIEW 8.2.
