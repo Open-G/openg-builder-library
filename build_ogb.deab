@@ -124,6 +124,11 @@ Recursive=FALSE
 Exclude=FALSE
 SourceFile 1="Support/DEAB Open LV80 Project App Reference.vi"
 SourceFile 2="Support/DEAB Open LV82 Project App Reference.vi"
+SourceFile 3="DEAB get XCTL Facade Path.vi"
+SourceFile 4="DEAB Get XCTL Paths.vi"
+SourceFile 5="DEAB save XCTL.vi"
+SourceFile 6="LIBUIP_Get_Ability_Name.vi"
+
 
 [SupportFiles 3]
 TargetDir="LV8 support"
