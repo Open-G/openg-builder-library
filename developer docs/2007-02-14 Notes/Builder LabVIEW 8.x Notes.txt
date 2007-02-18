@@ -1,0 +1,49 @@
+
+
+
+lvlib and xtlc as dynamic instead of top-level
+
+To Do: Ton can't install lvzip package
+
+How to detect if a member:
+
+- Linker Info
+- VI Property
+- VI's name, to see if it's in a namespace
+
+How to detect if a VI is using an XControl?
+
+- (New - Not Old) Read Linker Info supports XControl
+
+Need to map
+
+Issues affecting OpenG Builder in 8.x
+
+
+-= Issue =-
+
+When reading the linker info of an lvclass, the "Read Linker Info From File" function outputs an .lvclass's private data as "<BasePath>/ClassName.lvclass/ClassName.ctl".  Additionally, the "Library.Get All Descenents" method (when passed an lvclass reference) returns a reference to the "Class Private Data" (LibraryItemTypeString) which is a valid VI reference (of type "Control VI")
+
+Trying to use this path throws an error, when passed to the following functions:
+
+* Open VI Reference
+* Read Linker Info from File
+
+
+-= Solution =-
+
+Add "Library Item Type" output to "Library.GetMemberVIs.vi".  Filter out any "Class Private Data" elements
+
+
+-= Issue =-
+
+In "Copy Resource Files and Relink VIs.vi", Project Libraries should all be resaved, since they can depend on other project libraries.
+
+
+-= Issue =-
+
+Project Library members are getting renamed during build, such that the file names are being set to the fully qualified (library name prefixed) names (note that the colons are being automatically replaced with hyphens, for legal file names -- colon is an illegal character)
+
+-= Project Libraries can "feel" VIs move locations and vice versa =-
+
+-= VI Type Enum Updated for LabVIEW 8.2 =-
