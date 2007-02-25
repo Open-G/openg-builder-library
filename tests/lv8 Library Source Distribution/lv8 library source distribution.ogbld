@@ -32,10 +32,11 @@ EXE App Flags=4
 EXE LVRT Res Flags=0
 
 [Top Level VIs]
-VI 1=<application>/examples/lvoop/SingletonPattern/Singleton.lvlib
-VI 2=<application>/examples/lvoop/SingletonPattern/SomeData/SomeData.lvclass
+VI 1=<application>/examples/lvoop/SingletonPattern/Singleton Design Pattern Example.vi
 
 [Dynamic VIs]
+DynVI 1=<application>/examples/lvoop/SingletonPattern/SomeData/SomeData.lvclass
+DynVI 2=<application>/examples/lvoop/SingletonPattern/Singleton.lvlib
 
 [Exclude Lib Dirs from Build]
 
