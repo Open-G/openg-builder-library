@@ -2,6 +2,11 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+*** 21:47 19.04.2007 (JK)
+
+- OGB Mod: Added ability for destination source directory to override exclude lib directory, if the source directory is deeper than the exclude lib directory.
+
+
 *** 19:02 16.03.2007 (JK)
 
 - OGB Mod: Added support for LLB destinations with file extensions other than *.llb.
