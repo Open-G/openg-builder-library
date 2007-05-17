@@ -1,0 +1,15 @@
+* Need to filter the Class Private Data from the linker info (or perhaps fix the path so that it is beneath the lvclass file?)  Need to figure out why it its path is not beneath the lvclass -- probably this is in the path resolver and should also be fixed.  We still might have some trouble with Write Linker Info (in 8.2.1), since read linker info had some troubles.
+
+* It might be a good idea to change the Write Linker function to iterate over the input paths in a For Loop -- does this cause any issues (I don't think so)?  This would allow progress to be displayed.  Maybe this could be selected with an INI key?
+
+* Builder is having trouble finding lvlib (and possibly members) when it's not explicitly included in the build.  This doesn't seem to be happening when lvclass files are not explicitely included -- why lvlib?.
+
+* Should I really be removing the Class Private Data members from the Library Members inside "Get Parent Libraries and Members.vi" -- I would think that we should output these but simply treat them appropriately, later.
+
+* Need to commit local modifications in my (JK) sandbox or determine the changes (lvdiff)
+
+* Should put a dialog instructing user to restart LabVIEW after mass compiling builder.
+
+* Double-click of VI in main UI should open in the user's application context (Menu-Launch App Instance).
+
+* Need to devise a way to find Static VI Reference VIs.  How about using App.All VIs in LabVIEW 8.x, since we are working in a segregated application instance?
