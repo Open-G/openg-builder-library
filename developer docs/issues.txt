@@ -13,3 +13,25 @@
 * Double-click of VI in main UI should open in the user's application context (Menu-Launch App Instance).
 
 * Need to devise a way to find Static VI Reference VIs.  How about using App.All VIs in LabVIEW 8.x, since we are working in a segregated application instance?
+
+* Apply passwords to lvlibs
+
+----NameSpace mangling for lvlibs----(TP)
+
+*NameSpace Mangling of lvlibs --->OpenG\trunk\builder\source\Support\Generate Resources Copy Info.vi
+
+*Change the name of the VI in memory to compensate for lvlib renaming. --->OpenG\trunk\builder\source\Support\Save VIs to destination.vi
+why refere by name and not by ref?
+
+----Nested lvlibs:
+	possible pitfalls/bugs:
+	No nested lvlibs?
+
+	The library/vi name seperator does not compare for this.
+
+	OpenG\trunk\builder\source\Support\Parse Library Member Name.vi
+
+	something like mySerial.lvlib:myGPS.lvlib:init.vi
+
+	will return init.vi as vi name (OK)
+	and mySerial.lvlib:myGPS.lvlib as Library name (probably not OK)
