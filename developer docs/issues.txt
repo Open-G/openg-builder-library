@@ -35,3 +35,7 @@ why refere by name and not by ref?
 
 	will return init.vi as vi name (OK)
 	and mySerial.lvlib:myGPS.lvlib as Library name (probably not OK)
+
+* [JK] Need to generate an error when a name collision occurs -- need to test that no two VI's name/location on disk will collide.
+
+* [JK] Need an option to automatically name mangle VIs (e.g., prefix with lvlib name) if a name collision would occur.
