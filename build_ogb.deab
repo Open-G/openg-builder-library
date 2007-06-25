@@ -138,12 +138,15 @@ Recursive=FALSE
 Exclude=FALSE
 SourceFile 1="LabVIEW 8.0 Support/Library.Close.vi"
 SourceFile 2="LabVIEW 8.0 Support/Library.GetMemberVIs.vi"
-SourceFile 3="LabVIEW 8.0 Support/Library.Open.vi"
-SourceFile 4="LabVIEW 8.0 Support/Library.Save.vi"
-SourceFile 5="LabVIEW 8.0 Support/VI.GetLibraries.Members.vi"
-SourceFile 6="LabVIEW 8.0 Support/VI.GetXCTLS.Libraries.vi"
+SourceFile 3="LabVIEW 8.0 Support/Library.GetTypeString.vi"
+SourceFile 4="LabVIEW 8.0 Support/Library.Open.vi"
+SourceFile 5="LabVIEW 8.0 Support/Library.RemoveDuplicates.vi"
+SourceFile 6="LabVIEW 8.0 Support/Library.Save.vi"
+SourceFile 7="LabVIEW 8.0 Support/VI.GetLibraries.Members.vi"
+SourceFile 8="LabVIEW 8.0 Support/VI.GetXCTLS.Libraries.vi"
 SourceFile 7="LabVIEW 8.0 Support/Library.GetTypeString.vi"
 SourceFile 8="LabVIEW 8.0 Support/Library.RemoveDuplicates.vi"
+
 
 [SupportFiles 4]
 TargetDir=""

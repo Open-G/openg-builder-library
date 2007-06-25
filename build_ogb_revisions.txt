@@ -1,34 +1,34 @@
 [build_ogb.deab]
-Version=1.0.0-beta07
-Build_Number=312
-Build_Date="24-2-2007 15:59:47"
+Version=2.0.0
+Build_Number=338
+Build_Date="6/25/2007 10:46:19 AM"
 Status=OK
 Warnings=1
-Log_File="/D/Mijn Documenten/Labview/OpenG/builder/trunk/builder/built/build_ogb.log"
+Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb.log
 
 [build_ogb_api.deab]
-Version=1.0.0-beta07
-Build_Number=209
-Build_Date="24-2-2007 16:07:42"
+Version=2.0.0
+Build_Number=231
+Build_Date="6/25/2007 10:48:17 AM"
 Status=OK
 Warnings=0
-Log_File="/D/Mijn Documenten/Labview/OpenG/builder/trunk/builder/built/build_ogb_api.log"
+Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb_api.log
 
 [build_ogb_deab.deab]
-Version=1.0.0-beta07
-Build_Number=118
-Build_Date="24-2-2007 16:08:01"
+Version=2.0.0
+Build_Number=140
+Build_Date="6/25/2007 10:48:26 AM"
 Status=OK
 Warnings=0
-Log_File="/D/Mijn Documenten/Labview/OpenG/builder/trunk/builder/built/build_ogb_deab.log"
+Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb_deab.log
 
 [build_ogb_help.deab]
-Version=1.0.0-beta07
-Build_Number=165
-Build_Date="24-2-2007 16:08:10"
+Version=2.0.0
+Build_Number=187
+Build_Date="6/25/2007 10:48:31 AM"
 Status=OK
 Warnings=0
-Log_File="/D/Mijn Documenten/Labview/OpenG/builder/trunk/builder/built/build_ogb_help.log"
+Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb_help.log
 
 [build_ogmsiib.deab]
 Version=1.0.0-alpha2
@@ -47,9 +47,9 @@ Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb_aae.
 
 [build_ogb_menu_launch.deab]
 Version=0.0.0
-Build_Number=23
-Build_Date="24-2-2007 16:08:17"
+Build_Number=45
+Build_Date="6/25/2007 10:48:35 AM"
 Status=OK
 Warnings=0
-Log_File="/D/Mijn Documenten/Labview/OpenG/builder/trunk/builder/built/build_ogb_menu_launch.log"
+Log_File=/D/Projects/OpenG/opengtoolkit/SVN_Folders/builder/built/build_ogb_menu_launch.log
 
