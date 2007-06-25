@@ -2,6 +2,11 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+*** 16:15 25.06.2007 (JK)
+
+- OGB Mod: Added support for Static VI References and Dynamic Methods, which do not appear in the VI.Calees[] list.
+
+
 *** 21:47 19.04.2007 (JK)
 
 - OGB Mod: Added ability for destination source directory to override exclude lib directory, if the source directory is deeper than the exclude lib directory.
