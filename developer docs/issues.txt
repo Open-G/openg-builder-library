@@ -8,7 +8,7 @@
 
 * Need to commit local modifications in my (JK) sandbox or determine the changes (lvdiff)
 
-* Should put a dialog instructing user to restart LabVIEW after mass compiling builder.
+* Should put a dialog instructing user to restart LabVIEW after mass compiling builder (otherwise LabVIEW will crash builder tries to build -- make note of annoying TrimWhitespace changed messages).
 
 * Double-click of VI in main UI should open in the user's application context (Menu-Launch App Instance).
 
