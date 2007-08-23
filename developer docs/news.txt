@@ -2,6 +2,14 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+
+
+*** 13:16 23.08.2007 (JK)
+
+- OGB Mod: Set Library.IgnoreLocks = TRUE for all Project Libraries to avoid issue in 8.5 where cannot Save As on VI in locked Library.
+- OGB Mod: Changed how private Application Context is opened to avoid issues with crashing after build in 8.5.
+
+
 *** 16:15 25.06.2007 (JK)
 
 - OGB Mod: Added support for Static VI References and Dynamic Methods, which do not appear in the VI.Calees[] list.
