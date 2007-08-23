@@ -42,7 +42,7 @@ Source Dir=built/rsc
 Target Dir=<resource>/OpenG/build
 Replace Mode=Always
 Num Files=2
-File 0="*"
+File 0=*
 File 1="LV8 support/*"
 
 [File Group 1]
@@ -73,13 +73,13 @@ Source Dir=built/project
 Target Dir=<project>
 Replace Mode=Always
 Num Files=1
-File 0="*"
+File 0=*
 
 [File Group 5]
 Source Dir=built/help
 Target Dir="<help>/OpenG Builder"
 Replace Mode=Always
 Num Files=3
-File 0="*"
-File 1="images/*"
-File 2="css/*"
+File 0=*
+File 1=images/*
+File 2=css/*
