@@ -6,6 +6,7 @@ been performed on Windows platform only (W2K)
 
 - OGB Mod: Self-build at first startup no longer pulls in vi.lib components for LabVIEW 8.0 or greater since builds are now done in an isolated application instance (private context).
 - OGB Mod: Added support for name mangling of Project Libraries (as well as LVClasses, XControls, and XNodes)
+- OGB Mod: Added a proxy for Read Linker info in 8.0 or greater that uses the new Read Linker info Function.
 
 
 *** 13:16 23.08.2007 (JK)
