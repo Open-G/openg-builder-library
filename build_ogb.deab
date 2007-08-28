@@ -31,32 +31,30 @@ Call Pre-Build VI=""
 Call Post-Build VI="OGB_Builder.llb/Pre-Post Build VI (deab builder).vi"
 
 # This does not work when DEAB source is used to build a DEAB target=""
-# A version is taken in a Post-Build VI and saved to DEAB Curren Version.vi in DEAB Builder.vi=""
+# A version is taken in a Post-Build VI and saved to DEAB Current Version.vi in DEAB Builder.vi=""
 # Version VI Name="DEAB Current Version.vi"
 # Version Ctrl Name="Version Info"
-
-
-
-##########################=""
 Version VI Name=""
 Version Ctrl Name=""
 Apply New Password=""
 RemovePolyVIsAndTypedefs=FALSE
 Allow CBVI & Build Hierarchy Overlap=FALSE
 Namespace Convention=0
+
+
 [Top Level VIs]
-##########################=""
 VI 1="VI Tree - OGB.vi"
 VI 2=GUI/OpenG_Builder.vi
 
+
 [Dynamic VIs]
-##########################=""
 DynVI 1="support/Generic Set Single Property Template.vi"
 DynVI 2="support/Generic VI Property Template.vi"
 
+
 [Exclude Lib Dirs from Build]
-LibDir 1=<vi.lib>
-##########################=""
+#LibDir 1=<vi.lib>
+
 
 [Destination 1]
 Source Dir=""
@@ -126,7 +124,7 @@ SourceFile 1="Support/DEAB Open LV80 Project App Reference.vi"
 SourceFile 2="DEAB get XCTL Facade Path.vi"
 SourceFile 3="DEAB Get XCTL Paths.vi"
 SourceFile 4="DEAB save XCTL.vi"
-SourceFile 5="LIBUIP_Get_Ability_Name.vi"
+SourceFile 5=LIBUIP_Get_Ability_Name.vi
 
 
 [SupportFiles 3]
@@ -154,4 +152,4 @@ OverwriteExisting=TRUE
 FollowVIDirHierarchy=FALSE
 Recursive=FALSE
 Exclude=FALSE
-SourceFile 1="Support/libraryn/libraryn.bin"
+SourceFile 1=Support/libraryn/libraryn.bin
