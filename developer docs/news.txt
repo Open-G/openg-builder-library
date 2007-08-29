@@ -2,6 +2,13 @@
 All the new features need be tested more carefully than it's done. More, a testing has
 been performed on Windows platform only (W2K)
 
+
+
+*** 16:06 29.08.2007 (JK)
+
+- OGB Mod: Source Directory can now override an Exclude Directory, if the Source Directory is deeper than the Exclude Directory.
+
+
 *** 13:54 26.08.2007 (JK)
 
 - OGB Mod: Self-build at first startup no longer pulls in vi.lib components for LabVIEW 8.0 or greater since builds are now done in an isolated application instance (private context).
