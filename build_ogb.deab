@@ -144,6 +144,9 @@ SourceFile 8="LabVIEW 8.0 Support/VI.GetXCTLS.Libraries.vi"
 SourceFile 7="LabVIEW 8.0 Support/Library.GetTypeString.vi"
 SourceFile 8="LabVIEW 8.0 Support/Library.RemoveDuplicates.vi"
 SourceFile 9="LabVIEW 8.0 Support/Read Linker Info.vi"
+SourceFile 10="LabVIEW 8.0 Support/Builder.GetUserApp.vi"
+SourceFile 11="LabVIEW 8.0 Support/Builder.LoadedFromProject.vi"
+SourceFile 12="LabVIEW 8.0 Support/Disconnect XNodes.vi"
 
 
 [SupportFiles 4]
