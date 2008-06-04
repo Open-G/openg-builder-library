@@ -1,13 +1,13 @@
 [Package Name]
 Name=ogrsc_builder
-Version=2.0.0.358
+Version=2.0.0.393
 Release=1
 
 [Description]
 Description="OpenG's Software Builder.  After installing this package, you can run the OpenG Builder by selecting Tools > OpenG Builder from the LabVIEW menubar."
 Summary="A flexible builder for software products written in G."
 License=LGPL
-Copyright="Konstantin Shifershteyn, Jim Kring, Rolf Kalbermatter, Cal-Bay Systems 2002-2006"
+Copyright="Konstantin Shifershteyn, Jim Kring, Rolf Kalbermatter, Ton Plomp, Cal-Bay Systems 2002-2008"
 Distribution="OpenG Toolkit"
 Icon=builder.bmp
 Vendor=OpenG.org
