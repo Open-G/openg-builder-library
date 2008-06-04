@@ -1,6 +1,6 @@
 [Package Name]
 Name=ogrsc_builder
-Version=2.0.0.393
+Version=2.0.0.397
 Release=1
 
 [Description]
