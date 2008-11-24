@@ -1,0 +1,58 @@
+VIs not Added to the project:
+
+Name collision with dynamic API
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application API.vi
+
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application from Build File API.vi
+
+VI Tree OpenG BUilder.vi Warnings:
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\Dialog - Edit Time Format String.vi
+    - You will no longer receive mouse up events after a drag and drop operation.  You will receive the Drag Ended event for the drag source control instead.
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\Dialog - Select VI of Build Hierarchy.vi
+    - You will no longer receive mouse up events after a drag and drop operation.  You will receive the Drag Ended event for the drag source control instead.
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\Dialog - VI Property List.vi
+    - You will no longer receive mouse up events after a drag and drop operation.  You will receive the Drag Ended event for the drag source control instead.
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\GUI Select File Dialog.vi
+    - The File Dialog function no longer supports the datalog type input.
+    - The File Dialog function no longer supports the datalog type input.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\OGB - Create Version Info VI.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\GUI\OpenG_Builder.vi
+    - You will no longer receive mouse up events after a drag and drop operation.  You will receive the Drag Ended event for the drag source control instead.
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Support\Test for VI Unsaved Changes.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+
+
+VI Tree DEAB API.vi Warnings:
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\VI Tree - DEAB_API.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+Ogb Builder.lvproj
+    - The VI expected to be at "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Dynamic API\Build Application API.vi" was loaded from "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application API.vi".
+    - The VI expected to be at "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Dynamic API\Build Application from Build File API.vi" was loaded from "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application from Build File API.vi".
+
+VI Tree OG MSI IB.vi warnings:
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\VI Tree - OG MSI IB.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+
+VI Tree OGB.vi warnings:
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\VI Tree - OGB.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+
+VI Tree OGB API.vi warnings:
+
+D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\VI Tree - OGB_API.vi
+    - LabVIEW 8.0 changed a constant that was wired to a Case structure to a hidden control to maintain compatibility with LabVIEW 7.1 and earlier.
+Ogb Builder.lvproj
+    - The VI expected to be at "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application API.vi" was loaded from "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Dynamic API\Build Application API.vi".
+    - The VI expected to be at "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Legacy API\Build Application from Build File API.vi" was loaded from "D:\Mijn Documenten\LabVIEW Data\OpenG\trunk\builder\source\Dynamic API\Build Application from Build File API.vi".
+
