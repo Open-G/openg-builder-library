@@ -1,0 +1,6 @@
+
+2008-11-29 - Jim Kring
+* [CHANGE] OpenG Builder's self-builder no longer calls OpenG Builder by reference, since the Builder now builds applications in a private context.
+* [CHANGE] Set Builder version to 3.0 and reset build number
+* [CHANGE] OpenG Builder build rules now excludes vi.lib from build.
+* [CHANGE] Building in of NI (vi.lib) VIs during mass compile is no longer occurring (but is still optional, via a Boolean constant).
