@@ -53,7 +53,7 @@ DynVI 2="support/Generic VI Property Template.vi"
 
 
 [Exclude Lib Dirs from Build]
-#LibDir 1=<vi.lib>
+LibDir 1=<vi.lib>
 
 
 [Destination 1]
