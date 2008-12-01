@@ -1,3 +1,6 @@
+2008-11-30 - Ton Plomp
+* [CHANGE] Replaced Proxy calls to LabVIEW 8.x VIs with direct calls
+* [CHANGE] Replaced U32 typecasted refs with native Library References
 
 2008-11-29 - Jim Kring
 * [CHANGE] OpenG Builder's self-builder no longer calls OpenG Builder by reference, since the Builder now builds applications in a private context.
