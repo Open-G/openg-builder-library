@@ -1,3 +1,9 @@
+2008-12-4 - Ton Plomp
+* [CHANGE] OpenG Builder Menu launcher doesn't show OGB GUI
+* [CHANGE] OpenG Builder GIU Opens itself
+* [BUG-2390363] Adjusted text and description for LabVIEW project checking
+* [BUG-2390613] Changed Glyph for 'Remove VI'
+
 2008-11-30 - Ton Plomp
 * [CHANGE] Replaced Proxy calls to LabVIEW 8.x VIs with direct calls
 * [CHANGE] Replaced U32 typecasted refs with native Library References
