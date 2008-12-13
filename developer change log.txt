@@ -1,3 +1,13 @@
+2008-12-12 - Ton Plomp
+[CHANGE] Added Options Dialog
+[CHANGE] Added 'Edit-> Options' menu option
+[CHANGE] Removed Options tab-page with controls
+
+2008-12-6 - Ton Plomp
+* [CHANGE] Adjusted OGB Options VIs
+    * Clean up the OGB Options to move inputs/outputs down one terminal
+    * Move all Get(Set) Options under a Get(Set) Menu
+
 2008-12-4 - Ton Plomp
 * [CHANGE] OpenG Builder Menu launcher doesn't show OGB GUI
 * [CHANGE] OpenG Builder GIU Opens itself

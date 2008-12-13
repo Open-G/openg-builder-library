@@ -48,6 +48,7 @@
                <Item Name="Dialog - Save Changes Request.vi" Type="VI" URL="source/GUI/Dialog - Save Changes Request.vi"/>
                <Item Name="Dialog - Select VI of Build Hierarchy.vi" Type="VI" URL="source/GUI/Dialog - Select VI of Build Hierarchy.vi"/>
                <Item Name="Dialog - Version Control.vi" Type="VI" URL="source/GUI/Dialog - Version Control.vi"/>
+               <Item Name="Dialog - OGB Options.vi" Type="VI" URL="source/GUI/Dialog - OGB Options.vi"/>
                <Item Name="Dialog - VI Property List.vi" Type="VI" URL="source/GUI/Dialog - VI Property List.vi"/>
             </Item>
             <Item Name="GUI" Type="Folder">
@@ -61,8 +62,8 @@
                <Item Name="GUI Parse Cmd Queue.vi" Type="VI" URL="source/GUI/GUI Parse Cmd Queue.vi"/>
                <Item Name="GUI PathRoot Selector Manager.vi" Type="VI" URL="source/GUI/GUI PathRoot Selector Manager.vi"/>
                <Item Name="GUI Read Tips File.vi" Type="VI" URL="source/GUI/GUI Read Tips File.vi"/>
-               <Item Name="GUI Recent Paths SubMenu RW INI file.vi" Type="VI" URL="source/GUI/GUI Recent Paths SubMenu RW INI file.vi"/>
                <Item Name="GUI Recent Paths SubMenu.vi" Type="VI" URL="source/GUI/GUI Recent Paths SubMenu.vi"/>
+               <Item Name="GUI Recent Paths SubMenu RW INI file.vi" Type="VI" URL="source/GUI/GUI Recent Paths SubMenu RW INI file.vi"/>
                <Item Name="GUI Save File Dialog.vi" Type="VI" URL="source/GUI/GUI Save File Dialog.vi"/>
                <Item Name="GUI Select File Dialog.vi" Type="VI" URL="source/GUI/GUI Select File Dialog.vi"/>
             </Item>
@@ -97,9 +98,8 @@
                <Item Name="Read Linker Info_(Proxy).vi" Type="VI" URL="source/LabVIEW 8.0 Support/Read Linker Info_(Proxy).vi"/>
                <Item Name="VI.GetLibraries.Members_(Proxy).vi" Type="VI" URL="source/LabVIEW 8.0 Support/VI.GetLibraries.Members_(Proxy).vi"/>
             </Item>
-            <Item Name="- VI TREE - LabVIEW 8.0 Support.vi" Type="VI" URL="source/LabVIEW 8.0 Support/- VI TREE - LabVIEW 8.0 Support.vi"/>
             <Item Name="Builder.AddToProject.vi" Type="VI" URL="source/LabVIEW 8.0 Support/Builder.AddToProject.vi"/>
-            <Item Name="Builder.GetUserApp.vi" Type="VI" URL="/C/Program Files/National Instruments/LabVIEW 8.2/resource/OpenG/build/LV8 support/Builder.GetUserApp.vi"/>
+            <Item Name="Builder.GetUserApp.vi" Type="VI" URL="source/LabVIEW 8.0 Support/Builder.GetUserApp.vi"/>
             <Item Name="Builder.LoadedFromProject.vi" Type="VI" URL="source/LabVIEW 8.0 Support/Builder.LoadedFromProject.vi"/>
             <Item Name="Disconnect XNodes.vi" Type="VI" URL="source/LabVIEW 8.0 Support/Disconnect XNodes.vi"/>
             <Item Name="Library.Close.vi" Type="VI" URL="source/LabVIEW 8.0 Support/Library.Close.vi"/>
@@ -126,33 +126,6 @@
          </Item>
          <Item Name="MSI Installer Builder" Type="Folder">
             <Item Name="Typedefs" Type="Folder">
-               <Item Name=".svn" Type="Folder">
-                  <Item Name="prop-base" Type="Folder">
-                     <Item Name="OGIB - Dist Additional Installer Info.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Dist Additional Installer Info.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Executable After Settings.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Dist Executable After Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Install Dest.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Dist Install Dest.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Installer Destination Settings.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Dist Installer Destination Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Installer Settings.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Installer Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Overall Installer Settings.ctl.svn-base" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/prop-base/OGIB - Overall Installer Settings.ctl.svn-base"/>
-                  </Item>
-                  <Item Name="props" Type="Folder"/>
-                  <Item Name="text-base" Type="Folder">
-                     <Item Name="OGIB - Dist Additional Installer Info.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Dist Additional Installer Info.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Executable After Settings.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Dist Executable After Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Install Dest.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Dist Install Dest.ctl.svn-base"/>
-                     <Item Name="OGIB - Dist Installer Destination Settings.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Dist Installer Destination Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Installer Settings.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Installer Settings.ctl.svn-base"/>
-                     <Item Name="OGIB - Overall Installer Settings.ctl.svn-base" Type="VI" URL="source/MSI Installer Builder/Typedefs/.svn/text-base/OGIB - Overall Installer Settings.ctl.svn-base"/>
-                  </Item>
-                  <Item Name="tmp" Type="Folder">
-                     <Item Name="prop-base" Type="Folder"/>
-                     <Item Name="props" Type="Folder"/>
-                     <Item Name="text-base" Type="Folder"/>
-                  </Item>
-                  <Item Name="all-wcprops" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/all-wcprops"/>
-                  <Item Name="entries" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/entries"/>
-                  <Item Name="format" Type="Document" URL="source/MSI Installer Builder/Typedefs/.svn/format"/>
-               </Item>
                <Item Name="OGIB - Dist Additional Installer Info.ctl" Type="VI" URL="source/MSI Installer Builder/Typedefs/OGIB - Dist Additional Installer Info.ctl"/>
                <Item Name="OGIB - Dist Executable After Settings.ctl" Type="VI" URL="source/MSI Installer Builder/Typedefs/OGIB - Dist Executable After Settings.ctl"/>
                <Item Name="OGIB - Dist Install Dest.ctl" Type="VI" URL="source/MSI Installer Builder/Typedefs/OGIB - Dist Install Dest.ctl"/>
@@ -248,7 +221,6 @@
                <Item Name="VI Hierarchy Element.ctl" Type="VI" URL="source/Support/Data Structures/VI Hierarchy Element.ctl"/>
             </Item>
             <Item Name="libraryn" Type="Folder">
-               <Item Name="DEAB All Librarian VIs.vi" Type="VI" URL="source/Support/libraryn/DEAB All Librarian VIs.vi"/>
                <Item Name="DEAB App Version To I32.vi" Type="VI" URL="source/Support/libraryn/DEAB App Version To I32.vi"/>
                <Item Name="DEAB App Version To String.vi" Type="VI" URL="source/Support/libraryn/DEAB App Version To String.vi"/>
                <Item Name="DEAB Application Version.ctl" Type="VI" URL="source/Support/libraryn/DEAB Application Version.ctl"/>
@@ -283,7 +255,6 @@
                <Item Name="DEAB Temp Filename.vi" Type="VI" URL="source/Support/libraryn/DEAB Temp Filename.vi"/>
                <Item Name="DEAB Temp Restore File.vi" Type="VI" URL="source/Support/libraryn/DEAB Temp Restore File.vi"/>
                <Item Name="libraryn.bin" Type="Document" URL="source/Support/libraryn/libraryn.bin"/>
-               <Item Name="VI Tree - Libraryn.vi" Type="VI" URL="source/Support/libraryn/VI Tree - Libraryn.vi"/>
             </Item>
             <Item Name="Options" Type="Folder">
                <Item Name="OGB_Options.vi" Type="VI" URL="source/Support/Options/OGB_Options.vi"/>
@@ -322,7 +293,6 @@
                <Item Name="Pathroots Enumeration__pthrtapi.ctl" Type="VI" URL="source/Support/pathroots_api.llb/Pathroots Enumeration__pthrtapi.ctl"/>
                <Item Name="Pathroots Resource Directory__pthrtapi.vi" Type="VI" URL="source/Support/pathroots_api.llb/Pathroots Resource Directory__pthrtapi.vi"/>
                <Item Name="Platform Pathroots Resource Directory__platpthrtapi__pthrtapi.vi" Type="VI" URL="source/Support/pathroots_api.llb/Platform Pathroots Resource Directory__platpthrtapi__pthrtapi.vi"/>
-               <Item Name="VI Tree - Pathroots API__pthrtapi.vi" Type="VI" URL="source/Support/pathroots_api.llb/VI Tree - Pathroots API__pthrtapi.vi"/>
             </Item>
             <Item Name="Project" Type="Folder">
                <Item Name="OpenFromProject.vi" Type="VI" URL="source/Support/Project/OpenFromProject.vi"/>
@@ -472,12 +442,18 @@
                <Item Name="Text File Viewer.deab" Type="Document" URL="example_projects/Text File Viewer/Text File Viewer.deab"/>
             </Item>
          </Item>
-         <Item Name="VI Tree - DEAB_API.vi" Type="VI" URL="source/VI Tree - DEAB_API.vi"/>
-         <Item Name="VI Tree - OG MSI IB.vi" Type="VI" URL="source/VI Tree - OG MSI IB.vi"/>
-         <Item Name="VI Tree - OGB.vi" Type="VI" URL="source/VI Tree - OGB.vi"/>
-         <Item Name="VI Tree - OGB_API.vi" Type="VI" URL="source/VI Tree - OGB_API.vi"/>
+         <Item Name="VI Trees" Type="Folder">
+            <Item Name="VI Tree - DEAB_API.vi" Type="VI" URL="source/VI Tree - DEAB_API.vi"/>
+            <Item Name="DEAB All Librarian VIs.vi" Type="VI" URL="source/Support/libraryn/DEAB All Librarian VIs.vi"/>
+            <Item Name="VI Tree - OG MSI IB.vi" Type="VI" URL="source/VI Tree - OG MSI IB.vi"/>
+            <Item Name="VI Tree - OGB.vi" Type="VI" URL="source/VI Tree - OGB.vi"/>
+            <Item Name="VI Tree - OGB_API.vi" Type="VI" URL="source/VI Tree - OGB_API.vi"/>
+            <Item Name="ALL_OF_OGB.vi" Type="VI" URL="ALL_OF_OGB.vi"/>
+            <Item Name="- VI TREE - LabVIEW 8.0 Support.vi" Type="VI" URL="source/LabVIEW 8.0 Support/- VI TREE - LabVIEW 8.0 Support.vi"/>
+            <Item Name="VI Tree - Libraryn.vi" Type="VI" URL="source/Support/libraryn/VI Tree - Libraryn.vi"/>
+            <Item Name="VI Tree - Pathroots API__pthrtapi.vi" Type="VI" URL="source/Support/pathroots_api.llb/VI Tree - Pathroots API__pthrtapi.vi"/>
+         </Item>
          <Item Name="8.2LoadWarnings.txt" Type="Document" URL="developer docs/8.2LoadWarnings.txt"/>
-         <Item Name="ALL_OF_OGB.vi" Type="VI" URL="ALL_OF_OGB.vi"/>
       </Item>
       <Item Name="Build Tools" Type="Folder">
          <Item Name="OGB Builder.vi" Type="VI" URL="OGB_Builder.llb/OGB Builder.vi"/>
@@ -493,6 +469,7 @@
          <Item Name="builder.spec" Type="Document" URL="builder.spec"/>
          <Item Name="change-log.txt" Type="Document" URL="change-log.txt"/>
          <Item Name="notes.txt" Type="Document" URL="notes.txt"/>
+         <Item Name="GetVIsVersion.vi" Type="VI" URL="build support/GetVIsVersion.vi"/>
       </Item>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build"/>
