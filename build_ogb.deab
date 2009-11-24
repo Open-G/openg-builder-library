@@ -37,7 +37,7 @@ Call Post-Build VI="OGB_Builder.llb/Pre-Post Build VI (deab builder).vi"
 Version VI Name=""
 Version Ctrl Name=""
 Apply New Password=""
-RemovePolyVIsAndTypedefs=FALSE
+RemovePolyVIsAndTypedefs=TRUE
 Allow CBVI & Build Hierarchy Overlap=FALSE
 Namespace Convention=0
 
