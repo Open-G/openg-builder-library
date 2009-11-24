@@ -15,7 +15,7 @@ Log File Suffix=""
 New Build Root=TRUE
 Include Hidden VIs=FALSE
 Overwrite Existing Files=TRUE
-Unsaved Changes MsgBox=TRUE
+Unsaved Changes MsgBox=FALSE
 
 Include Help Files=FALSE
 Include Shared Libs=FALSE
