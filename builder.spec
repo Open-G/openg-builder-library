@@ -1,6 +1,6 @@
 [Package Name]
 Name=ogrsc_builder
-Version=3.0.0.8
+Version=3.0.0.9
 Release=1
 [Description]
 Description=OpenG's Software Builder.  After installing this package, you can run the OpenG Builder by selecting Tools > OpenG Builder from the LabVIEW menubar.
@@ -13,7 +13,7 @@ Vendor=OpenG.org
 URL=http://builder.openg.org
 Packager=Jim Kring <jim@jimkring.com>
 [Platform]
-Exclusive_LabVIEW_Version=>=6.1
+Exclusive_LabVIEW_Version=>=8.2
 Exclusive_LabVIEW_System=All
 Exclusive_OS=All
 [Script VIs]
